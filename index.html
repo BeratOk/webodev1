@@ -10,6 +10,12 @@
 	<!-- Main CSS -->
 	<link rel="stylesheet" href="style.css" />
 	
+	
+	<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+   
+ 
+  <link href="https://unpkg.com/vueperslides/dist/vueperslides.css" rel="stylesheet">
+	
 	<!-- Favicons -->
 	<link rel="shortcut icon" href="images/favicon.ico" />
 	<link rel="apple-touch-icon-precomposed" href="images/apple-touch-icon.png" />
@@ -47,19 +53,175 @@
    
 </ul>
 </div>
+
+<div class="menuyani">
+<div class=robo>
+<a href="#"><img src="images/robo.png"  width="60" height="50" alt=""></a>
+</div>
+<div class=sepet>
+<a href="#"><img src="images/sepet.png" width="55" height="45" alt=""></a>
+</div>
+</div>
+
 </div>
 <div id="ikincisira">
 <div class="kategoributon">
   <button onclick="tumkategoriler()" class="kategoributondrop">TÜM KATEGORİLER</button>
   <div id="kategoridrop" class="kategori-dropdown">
-    <a href="#">Link 1</a>
-    <a href="#">Link 2</a>
-    <a href="#">Link 3</a>
+    <div class=menuitem>
+	<div class=menuicon>
+	<img src="images/arduino.png" width="50" height="42" alt="">
+	</div>
+	<div class=menuyazi>
+	<a href="#">Arduino</a>
+	</div>
+	
+	</div>
+	
+	<div class=menuitem>
+	<div class=menuicon>
+<img src="images/raspberrypi.png" width="50" height="42" alt="">
+	</div>
+	<div class=menuyazi>
+	<a href="#">Raspberry Pi</a>
+	</div>
+	
+	</div>
+	
+	<div class=menuitem>
+	<div class=menuicon>
+	<img src="images/egitici.png" width="50" height="42" alt="">
+	</div>
+	<div class=menuyazi>
+	<a href="#">Eğitici Setler</a>
+	</div>
+	
+	</div>
+	
+	<div class=menuitem>
+	<div class=menuicon>
+<img src="images/3d.png" width="50" height="42" alt="">
+	</div>
+	<div class=menuyazi>
+	<a href="#">3D</a>
+	</div>
+	
+	</div>
+	
+	<div class=menuitem>
+	<div class=menuicon>
+	<img src="images/gelistirmekart.png" width="50" height="42" alt="">
+	</div>
+	<div class=menuyazi>
+	<a href="#">Geliştirme Kartı</a>
+	</div>
+	
+	</div>
+	
+	<div class=menuitem>
+	<div class=menuicon>
+	<img src="images/elektronikkart.png" width="50" height="42" alt="">
+	</div>
+	<div class=menuyazi>
+	<a href="#">Elektronik Kart</a>
+	</div>
+	
+	</div>
+	
+	<div class=menuitem>
+	<div class=menuicon>
+	<img src="images/motor.png" width="50" height="42" alt="">
+	</div>
+	<div class=menuyazi>
+	<a href="#">Motor</a>
+	</div>
+	
+	</div>
+	
+	<div class=menuitem>
+	<div class=menuicon>
+	<img src="images/sensor.png" width="50" height="42" alt="">
+	</div>
+	<div class=menuyazi>
+	<a href="#">Sensör</a>
+	</div>
+	
+	</div>
+	
+	<div class=menuitem>
+	<div class=menuicon>
+	<img src="images/guckaynagi.png" width="50" height="42" alt="">
+	</div>
+	<div class=menuyazi>
+	<a href="#">Güç Kaynağı</a>
+	</div>
+	
+	</div>
+	
+	<div class=menuitem>
+	<div class=menuicon>
+	<img src="images/prototipleme.png" width="50" height="42" alt="">
+	</div>
+	<div class=menuyazi>
+	<a href="#">Protipleme / Lehimleme</a>
+	</div>
+	
+	</div>
+	
+	<div class=menuitem>
+	<div class=menuicon>
+	<img src="images/kablosuzhaberlesme.png" width="50" height="42" alt="">
+	</div>
+	<div class=menuyazi>
+	<a href="#">Kablosuz Haberleşme</a>
+	</div>
+	
+	</div>
+	
+	<div class=menuitem>
+	<div class=menuicon>
+	<img src="images/komponent.png" width="50" height="42" alt="">
+	</div>
+	<div class=menuyazi>
+	<a href="#">Komponent</a>
+	</div>
+	
+	</div>
+	
+	<div class=menuitem>
+	<div class=menuicon>
+	<img src="images/mekanik.png" width="50" height="42" alt="">
+	</div>
+	<div class=menuyazi>
+	<a href="#">Mekanik</a>
+	</div>
+	
+	</div>
+	
+	<div class=menuitem>
+	<div class=menuicon>
+	<img src="images/tekerlek.png" width="50" height="42" alt="">
+	</div>
+	<div class=menuyazi>
+	<a href="#">Tekerlek</a>
+	</div>
+	
+	</div>
+	
+	<div class=menuitem>
+	<div class=menuicon>
+	<img src="images/olcu.png" width="50" height="42" alt="">
+	</div>
+	<div class=menuyazi>
+	<a href="#">Ölçü ve Test Aleti</a>
+	</div>
+	
+	</div>
   </div>
 </div>
 <div id="aramakutusu">
 	<form action="" method="get">
-		<input type="text" name="ara" id="AKutu"/>
+		<input type="text" name="ara" class="aramayazi" placeholder="Aramak istediğiniz şeyi yazın .. "id= AKutu"/>
 <div class="dropdown">
   <button onclick="myFunction()" class="dropbtn">Tüm Kategoriler</button>
   <div id="myDropdown" class="dropdown-content">
@@ -72,70 +234,757 @@
 	</form>
 </div> <!-- #aramakutusu -->
 
+<div class="uckisim">
+
+<ul>
+   <li> <a href="index-2.html">Müşteri Yorumları</span></a>
+   <li> <a href="index-2.html">Videolar</span></a>
+   <li> <a href="index-2.html">Blog</span></a>
+   <li> <a href="index-2.html">Ücretsiz Kargo</span></a>
+   <li> <a href="index-2.html">Kargo Takip</span></a>
+   <li> <a href="index-2.html">Yardım</span></a>
+   
+</ul>
+
+
+
+</div>
+
 </div>
 
 <div id="icerik">
 
 <div id="solicerik">
-<div class="soldropdown">
-  <button class="soldropbtn">Dropdown</button>
-  <div class="soldropdown-content">
-    <a href="#">Link 1</a>
-    <a href="#">Link 2</a>
-    <a href="#">Link 3</a>
-  </div>
-</div>
 
-<div class="soldropdown">
-  <button class="soldropbtn">Dropdown</button>
-  <div class="soldropdown-content">
-    <a href="#">Link 1</a>
-    <a href="#">Link 2</a>
-    <a href="#">Link 3</a>
-  </div>
-</div>
+<div class=soldamenu>
+
+
+    <div class=menuitem>
+	<div class=menuicon>
+	<img src="images/arduino.png" width="50" height="42" alt="">
+	</div>
+	<div class=menuyazi>
+	<a href="#">Arduino</a>
+	</div>
+	
+	</div>
+	
+	<div class=menuitem>
+	<div class=menuicon>
+<img src="images/raspberrypi.png" width="50" height="42" alt="">
+	</div>
+	<div class=menuyazi>
+	<a href="#">Raspberry Pi</a>
+	</div>
+	
+	</div>
+	
+	<div class=menuitem>
+	<div class=menuicon>
+	<img src="images/egitici.png" width="50" height="42" alt="">
+	</div>
+	<div class=menuyazi>
+	<a href="#">Eğitici Setler</a>
+	</div>
+	
+	</div>
+	
+	<div class=menuitem>
+	<div class=menuicon>
+<img src="images/3d.png" width="50" height="42" alt="">
+	</div>
+	<div class=menuyazi>
+	<a href="#">3D</a>
+	</div>
+	
+	</div>
+	
+	<div class=menuitem>
+	<div class=menuicon>
+	<img src="images/gelistirmekart.png" width="50" height="42" alt="">
+	</div>
+	<div class=menuyazi>
+	<a href="#">Geliştirme Kartı</a>
+	</div>
+	
+	</div>
+	
+	<div class=menuitem>
+	<div class=menuicon>
+	<img src="images/elektronikkart.png" width="50" height="42" alt="">
+	</div>
+	<div class=menuyazi>
+	<a href="#">Elektronik Kart</a>
+	</div>
+	
+	</div>
+	
+	<div class=menuitem>
+	<div class=menuicon>
+	<img src="images/motor.png" width="50" height="42" alt="">
+	</div>
+	<div class=menuyazi>
+	<a href="#">Motor</a>
+	</div>
+	
+	</div>
+	
+	<div class=menuitem>
+	<div class=menuicon>
+	<img src="images/sensor.png" width="50" height="42" alt="">
+	</div>
+	<div class=menuyazi>
+	<a href="#">Sensör</a>
+	</div>
+	
+	</div>
+	
+	<div class=menuitem>
+	<div class=menuicon>
+	<img src="images/guckaynagi.png" width="50" height="42" alt="">
+	</div>
+	<div class=menuyazi>
+	<a href="#">Güç Kaynağı</a>
+	</div>
+	
+	</div>
+	
+	<div class=menuitem>
+	<div class=menuicon>
+	<img src="images/prototipleme.png" width="50" height="42" alt="">
+	</div>
+	<div class=menuyazi>
+	<a href="#">Protipleme / Lehimleme</a>
+	</div>
+	
+	</div>
+	
+	<div class=menuitem>
+	<div class=menuicon>
+	<img src="images/kablosuzhaberlesme.png" width="50" height="42" alt="">
+	</div>
+	<div class=menuyazi>
+	<a href="#">Kablosuz Haberleşme</a>
+	</div>
+	
+	</div>
+	
+	<div class=menuitem>
+	<div class=menuicon>
+	<img src="images/komponent.png" width="50" height="42" alt="">
+	</div>
+	<div class=menuyazi>
+	<a href="#">Komponent</a>
+	</div>
+	
+	</div>
+	
+	<div class=menuitem>
+	<div class=menuicon>
+	<img src="images/mekanik.png" width="50" height="42" alt="">
+	</div>
+	<div class=menuyazi>
+	<a href="#">Mekanik</a>
+	</div>
+	
+	</div>
+	
+	<div class=menuitem>
+	<div class=menuicon>
+	<img src="images/tekerlek.png" width="50" height="42" alt="">
+	</div>
+	<div class=menuyazi>
+	<a href="#">Tekerlek</a>
+	</div>
+	
+	</div>
+	
+	<div class=menuitem>
+	<div class=menuicon>
+	<img src="images/olcu.png" width="50" height="42" alt="">
+	</div>
+	<div class=menuyazi>
+	<a href="#">Ölçü ve Test Aleti</a>
+	</div>
+	</div>
+	</div>
+   
+
+
 
 </div>
 
 <div id="sagicerik">
-<!-- Slideshow container -->
-<div class="slideshow-container">
 
-  <!-- Full-width images with number and caption text -->
-  <div class="mySlides fade">
-    <div class="numbertext">1 / 3</div>
-    <img src="images/banner1.png" style="width:100%">
-    <div class="text">Caption Text</div>
+
+
+
+
+
+
+<div class="slayt"
+<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400" rel="stylesheet"/>
+<script id="v-carousel" type="x/template">
+  <div class="card-carousel-wrapper">
+    <div class="card-carousel--nav__left" @click="moveCarousel(-1)" :disabled="atHeadOfList"></div>
+    <div class="card-carousel">
+	 
+      <div class="card-carousel--overflow-container">
+	  
+        <div class="card-carousel-cards" :style="{ transform: 'translateX' + '(' + currentOffset + 'px' + ')'}">
+          <div class="card-carousel--card"><img height="350" width="950" src="images/banner2.png"/>
+            <div class="card-carousel--card--footer">
+              
+            </div>
+          </div>
+		 
+		 <div class="card-carousel--card"><img height="350" width="950" src="images/slayt2.png"/>
+            <div class="card-carousel--card--footer">
+              
+            </div>
+          </div>
+		  
+		  <div class="card-carousel--card"><img height="350" width="950" src="images/slayt1.png"/>
+            <div class="card-carousel--card--footer">
+              
+            </div>
+          </div>
+		 
+        </div>
+      </div>
+    </div>
+    <div class="card-carousel--nav__right" @click="moveCarousel(1)" :disabled="atEndOfList"></div>
   </div>
+</script>
+<div id="app1"> 
+  <carousel></carousel>
+</div>
+</div>
 
-  <div class="mySlides fade">
-    <div class="numbertext">2 / 3</div>
-    <img src="images/banner2.png" style="width:100%">
-    <div class="text">Caption Two</div>
+<div id="cartslide">
+<div class="cartaltslide">
+  <center><h3>SİZİN İÇİN SEÇTİKLERİMİZ</h3></center>
+
+<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400" rel="stylesheet"/>
+<script id="cv-carousel" type="x/template">
+  <div class="card-carousel-wrapper">
+    <div class="card-carousel--nav__left" @click="moveCarousel(-1)" :disabled="atHeadOfList"></div>
+    <div class="card-ccarousel">
+	 
+      <div class="card-carousel--overflow-container">
+	  
+        <div class="card-carousel-cards" :style="{ transform: 'translateX' + '(' + currentOffset + 'px' + ')'}">
+          <div class="card-carousel--card"><img height="250" width="200" src="images/cart1.jpg"/>
+            <div class="card-carousel--card--footer">
+              <a>Arduino UNO R3 (Klon)</a>
+			  <p><span style="font-size:20px;"><span style="font-family:tahoma,geneva,sans-serif;"><span style="color:#696969;"><strong>40.37 TL</strong></span></span></span></p>
+
+            </div>
+          </div>
+		 
+		 <div class="card-carousel--card"><img height="250" width="200" src="images/cart2.jpg"/>
+            <div class="card-carousel--card--footer">
+              <a>HC06 Modül Kartı</a>
+			  <p><span style="font-size:20px;"><span style="font-family:tahoma,geneva,sans-serif;"><span style="color:#696969;"><strong>23.32 TL</strong></span></span></span></p>
+            </div>
+          </div>
+		  
+		  <div class="card-carousel--card"><img height="250" width="200" src="images/cart3.jpg"/>
+            <div class="card-carousel--card--footer">
+              <a>Arduino Nano Klon</a>
+			  <p><span style="font-size:20px;"><span style="font-family:tahoma,geneva,sans-serif;"><span style="color:#696969;"><strong>21.39 TL</strong></span></span></span></p>
+            </div>
+          </div>
+		  
+		  <div class="card-carousel--card"><img height="250" width="200" src="images/cart4.jpg"/>
+            <div class="card-carousel--card--footer">
+              <a>Raspberry Pi 3</a>
+			  <p><span style="font-size:20px;"><span style="font-family:tahoma,geneva,sans-serif;"><span style="color:#696969;"><strong>273.37 TL</strong></span></span></span></p>
+            </div>
+          </div>
+		  
+		  <div class="card-carousel--card"><img height="250" width="200" src="images/cart5.jpg"/>
+            <div class="card-carousel--card--footer">
+              <a>NodeMCU Lodin</a>
+			  <p><span style="font-size:20px;"><span style="font-family:tahoma,geneva,sans-serif;"><span style="color:#696969;"><strong>268.37 TL</strong></span></span></span></p>
+            </div>
+          </div>
+		  
+		  <div class="card-carousel--card"><img height="250" width="200" src="images/cart6.jpg"/>
+            <div class="card-carousel--card--footer">
+              <a>Raspberry Pi 4</a>
+			  <p><span style="font-size:20px;"><span style="font-family:tahoma,geneva,sans-serif;"><span style="color:#696969;"><strong>650.37 TL</strong></span></span></span></p>
+            </div>
+          </div>
+		
+        </div>
+      </div>
+    </div>
+    <div class="card-carousel--nav__right" @click="moveCarousel(1)" :disabled="atEndOfList"></div>
   </div>
+</script>
+<div id="app"> 
+  <ccarousel></ccarousel>
+</div>
 
-  <div class="mySlides fade">
-    <div class="numbertext">3 / 3</div>
-<img src="images/banner2.png" style="width:100%">
-    <div class="text">Caption Three</div>
+</div>
+</div>
+<div class="cartslide2">
+<center><h3>SON GEZDİĞİNİZ ÜRÜNLER</h3></center>
+<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400" rel="stylesheet"/>
+<script id="cv-carousel" type="x/template">
+  <div class="card-ccarousel-wrapper">
+    <div class="card-carousel--nav__left" @click="moveCarousel(-1)" :disabled="atHeadOfList"></div>
+    <div class="card-ccarousel">
+      <div class="card-carousel--overflow-container">
+        <div class="card-carousel-cards" :style="{ transform: 'translateX' + '(' + currentOffset + 'px' + ')'}">
+          <div class="card-carousel--card" v-for="item in items"><img src="https://placehold.it/200x200"/>
+            <div class="card-carousel--card--footer">
+              <p>{{ item.name }}</p>
+              <p>{{ item.tag }}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="card-carousel--nav__right" @click="moveCarousel(1)" :disabled="atEndOfList"></div>
   </div>
+</script>
+<div id="app2"> 
+  <ccarousel></ccarousel>
+</div>
+<div class="cartslide3">
+<center><h3>ÇOK SATILAN ÜRÜNLER</h3></center>
+<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400" rel="stylesheet"/>
+<script id="cv-carousel" type="x/template">
+  <div class="card-ccarousel-wrapper">
+    <div class="card-carousel--nav__left" @click="moveCarousel(-1)" :disabled="atHeadOfList"></div>
+    <div class="card-ccarousel">
+      <div class="card-carousel--overflow-container">
+        <div class="card-carousel-cards" :style="{ transform: 'translateX' + '(' + currentOffset + 'px' + ')'}">
+          <div class="card-carousel--card" v-for="item in items"><img src="https://placehold.it/200x200"/>
+            <div class="card-carousel--card--footer">
+              <p>{{ item.name }}</p>
+              <p>{{ item.tag }}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="card-carousel--nav__right" @click="moveCarousel(1)" :disabled="atEndOfList"></div>
+  </div>
+</script>
+<div id="app3"> 
+  <ccarousel></ccarousel>
+</div>
+</div>
 
-  <!-- Next and previous buttons -->
-  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-  <a class="next" onclick="plusSlides(1)">&#10095;</a>
-</div>
-<br>
 
-<!-- The dots/circles -->
-<div style="text-align:center">
-  <span class="dot" onclick="currentSlide(1)"></span>
-  <span class="dot" onclick="currentSlide(2)"></span>
-  <span class="dot" onclick="currentSlide(3)"></span>
+<div class=alturunler>
+<div class=urun>
+<div class="card-carousel--card"><img height="250" width="200" src="images/urun1.jpg"/>
+            <div class="card-carousel--card--footer">
+              <a>Arduino UNO R3 (Klon)</a>
+			  <p><span style="font-size:20px;"><span style="font-family:tahoma,geneva,sans-serif;"><span style="color:#696969;"><strong>40.37 TL</strong></span></span></span></p>
+
+            </div>
+          </div>
 </div>
+<div class=urun>
+<div class="card-carousel--card"><img height="250" width="200" src="images/urun2.jpg"/>
+            <div class="card-carousel--card--footer">
+              <a>Arduino UNO R3 (Klon)</a>
+			  <p><span style="font-size:20px;"><span style="font-family:tahoma,geneva,sans-serif;"><span style="color:#696969;"><strong>40.37 TL</strong></span></span></span></p>
+
+            </div>
+          </div>
 </div>
+<div class=urun>
+<div class="card-carousel--card"><img height="250" width="200" src="images/urun3.jpg"/>
+            <div class="card-carousel--card--footer">
+              <a>Arduino UNO R3 (Klon)</a>
+			  <p><span style="font-size:20px;"><span style="font-family:tahoma,geneva,sans-serif;"><span style="color:#696969;"><strong>40.37 TL</strong></span></span></span></p>
+
+            </div>
+          </div>
+</div>
+<div class=urun>
+<div class="card-carousel--card"><img height="250" width="200" src="images/urun4.jpg"/>
+            <div class="card-carousel--card--footer">
+              <a>Arduino UNO R3 (Klon)</a>
+			  <p><span style="font-size:20px;"><span style="font-family:tahoma,geneva,sans-serif;"><span style="color:#696969;"><strong>40.37 TL</strong></span></span></span></p>
+
+            </div>
+          </div>
+</div>
+<div class=urun>
+<div class="card-carousel--card"><img height="250" width="200" src="images/urun5.jpg"/>
+            <div class="card-carousel--card--footer">
+              <a>Arduino UNO R3 (Klon)</a>
+			  <p><span style="font-size:20px;"><span style="font-family:tahoma,geneva,sans-serif;"><span style="color:#696969;"><strong>40.37 TL</strong></span></span></span></p>
+
+            </div>
+          </div>
+</div>
+<div class=urun>
+<div class="card-carousel--card"><img height="250" width="200" src="images/urun6.jpg"/>
+            <div class="card-carousel--card--footer">
+              <a>Arduino UNO R3 (Klon)</a>
+			  <p><span style="font-size:20px;"><span style="font-family:tahoma,geneva,sans-serif;"><span style="color:#696969;"><strong>40.37 TL</strong></span></span></span></p>
+
+            </div>
+          </div>
+</div>
+<div class=urun>
+<div class="card-carousel--card"><img height="250" width="200" src="images/urun7.jpg"/>
+            <div class="card-carousel--card--footer">
+              <a>Arduino UNO R3 (Klon)</a>
+			  <p><span style="font-size:20px;"><span style="font-family:tahoma,geneva,sans-serif;"><span style="color:#696969;"><strong>40.37 TL</strong></span></span></span></p>
+
+            </div>
+          </div>
+</div>
+<div class=urun>
+<div class="card-carousel--card"><img height="250" width="200" src="images/urun8.jpg"/>
+            <div class="card-carousel--card--footer">
+              <a>Arduino UNO R3 (Klon)</a>
+			  <p><span style="font-size:20px;"><span style="font-family:tahoma,geneva,sans-serif;"><span style="color:#696969;"><strong>40.37 TL</strong></span></span></span></p>
+
+            </div>
+          </div>
+</div>
+<div class=urun>
+<div class="card-carousel--card"><img height="250" width="200" src="images/urun9.jpg"/>
+            <div class="card-carousel--card--footer">
+              <a>Arduino UNO R3 (Klon)</a>
+			  <p><span style="font-size:20px;"><span style="font-family:tahoma,geneva,sans-serif;"><span style="color:#696969;"><strong>40.37 TL</strong></span></span></span></p>
+
+            </div>
+          </div>
+</div>
+<div class=urun>
+<div class="card-carousel--card"><img height="250" width="200" src="images/urun10.jpg"/>
+            <div class="card-carousel--card--footer">
+              <a>Arduino UNO R3 (Klon)</a>
+			  <p><span style="font-size:20px;"><span style="font-family:tahoma,geneva,sans-serif;"><span style="color:#696969;"><strong>40.37 TL</strong></span></span></span></p>
+
+            </div>
+          </div>
+</div>
+<div class=urun>
+<div class="card-carousel--card"><img height="250" width="200" src="images/urun11.jpg"/>
+            <div class="card-carousel--card--footer">
+              <a>Arduino UNO R3 (Klon)</a>
+			  <p><span style="font-size:20px;"><span style="font-family:tahoma,geneva,sans-serif;"><span style="color:#696969;"><strong>40.37 TL</strong></span></span></span></p>
+
+            </div>
+          </div>
+</div>
+<div class=urun>
+<div class="card-carousel--card"><img height="250" width="200" src="images/urun12.jpg"/>
+            <div class="card-carousel--card--footer">
+              <a>Arduino UNO R3 (Klon)</a>
+			  <p><span style="font-size:20px;"><span style="font-family:tahoma,geneva,sans-serif;"><span style="color:#696969;"><strong>40.37 TL</strong></span></span></span></p>
+
+            </div>
+          </div>
+</div>
+<div class=urun>
+<div class="card-carousel--card"><img height="250" width="200" src="images/urun13.jpg"/>
+            <div class="card-carousel--card--footer">
+              <a>Arduino UNO R3 (Klon)</a>
+			  <p><span style="font-size:20px;"><span style="font-family:tahoma,geneva,sans-serif;"><span style="color:#696969;"><strong>40.37 TL</strong></span></span></span></p>
+
+            </div>
+          </div>
+</div>
+<div class=urun>
+<div class="card-carousel--card"><img height="250" width="200" src="images/urun14.jpg"/>
+            <div class="card-carousel--card--footer">
+              <a>Arduino UNO R3 (Klon)</a>
+			  <p><span style="font-size:20px;"><span style="font-family:tahoma,geneva,sans-serif;"><span style="color:#696969;"><strong>40.37 TL</strong></span></span></span></p>
+
+            </div>
+          </div>
+</div>
+<div class=urun>
+<div class="card-carousel--card"><img height="250" width="200" src="images/urun15.jpg"/>
+            <div class="card-carousel--card--footer">
+              <a>Arduino UNO R3 (Klon)</a>
+			  <p><span style="font-size:20px;"><span style="font-family:tahoma,geneva,sans-serif;"><span style="color:#696969;"><strong>40.37 TL</strong></span></span></span></p>
+
+            </div>
+          </div>
+</div>
+<div class=urun>
+<div class="card-carousel--card"><img height="250" width="200" src="images/urun16.jpg"/>
+            <div class="card-carousel--card--footer">
+              <a>Arduino UNO R3 (Klon)</a>
+			  <p><span style="font-size:20px;"><span style="font-family:tahoma,geneva,sans-serif;"><span style="color:#696969;"><strong>40.37 TL</strong></span></span></span></p>
+
+            </div>
+          </div>
+</div>
+<div class=urun>
+<div class="card-carousel--card"><img height="250" width="200" src="images/urun17.png"/>
+            <div class="card-carousel--card--footer">
+              <a>Arduino UNO R3 (Klon)</a>
+			  <p><span style="font-size:20px;"><span style="font-family:tahoma,geneva,sans-serif;"><span style="color:#696969;"><strong>40.37 TL</strong></span></span></span></p>
+
+            </div>
+          </div>
+</div>
+<div class=urun>
+<div class="card-carousel--card"><img height="250" width="200" src="images/urun18.jpg"/>
+            <div class="card-carousel--card--footer">
+              <a>Arduino UNO R3 (Klon)</a>
+			  <p><span style="font-size:20px;"><span style="font-family:tahoma,geneva,sans-serif;"><span style="color:#696969;"><strong>40.37 TL</strong></span></span></span></p>
+
+            </div>
+          </div>
+</div>
+<div class=urun>
+<div class="card-carousel--card"><img height="250" width="200" src="images/urun19.png"/>
+            <div class="card-carousel--card--footer">
+              <a>Arduino UNO R3 (Klon)</a>
+			  <p><span style="font-size:20px;"><span style="font-family:tahoma,geneva,sans-serif;"><span style="color:#696969;"><strong>40.37 TL</strong></span></span></span></p>
+
+            </div>
+          </div>
+</div>
+<div class=urun>
+<div class="card-carousel--card"><img height="250" width="200" src="images/urun20.png"/>
+            <div class="card-carousel--card--footer">
+              <a>Arduino UNO R3 (Klon)</a>
+			  <p><span style="font-size:20px;"><span style="font-family:tahoma,geneva,sans-serif;"><span style="color:#696969;"><strong>40.37 TL</strong></span></span></span></p>
+
+            </div>
+          </div>
+</div>
+
+
+
+</div>
+
+
+<div class=sayfakontrol>
+
+
+
 </div>
 
 </div>
+
+
+
+
+
+
+</div>
+</div>
+</div>
+</div>
+<div class=neden>
+<div class=nedenresim>
+<img height="250" width="200" src="images/neden.png"/>
+</div>
+<div class=nedenyazi>
+<div class="col col-12 nedenTitle" style="margin: 0px; padding: 0px 10px; border: 0px; font-variant-numeric: inherit; font-variant-east-asian: inherit; font-weight: 600; font-stretch: inherit; font-size: 14px; line-height: 30px; font-family: &quot;Open Sans&quot;, sans-serif; vertical-align: baseline; float: left; box-sizing: border-box; width: 284.3px; color: rgb(9, 82, 121);">
+	Binlerce &Uuml;r&uuml;n Aynı G&uuml;n Kargo&#39;da!</div>
+<div class="col col-12 nedenText" style="margin: 0px; padding: 0px 10px; border: 0px; font-variant-numeric: inherit; font-variant-east-asian: inherit; font-stretch: inherit; line-height: 15px; font-family: &quot;Open Sans&quot;, sans-serif; vertical-align: baseline; float: left; box-sizing: border-box; width: 284.3px; color: rgb(80, 80, 80);">
+	Beş yıldızlı m&uuml;şteri hizmetleri politikamızdan taviz yok! Satış &ouml;ncesi ve satış sonrası ihtiyacınız olan teknik soruları cevaplamak i&ccedil;in teknik destek birimimiz her zaman hizmetinizde. Siparişinizle ilgili hi&ccedil;bir sıkıntı yaşamamanız i&ccedil;in de m&uuml;şteri hizmetlerimiz telefon ve mail &uuml;zerinden sizlere hizmet vermektedir. M&uuml;şterilerimizin tecr&uuml;belerini, yorumlarını ve puanlamalarını m&uuml;şteri memnuniyeti sayfamızdan inceleyebilirsiniz. Robotistan&#39;da %100 M&uuml;şteri Memnuniyeti her zaman garanti !</div>
+</div>
+</div>
+
+<div class=video>
+<iframe width="600" height="300" src="https://www.youtube.com/embed/EWNRjfuBM1M" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+
+<div class=kargo>
+<div class="col col-12 nedenTitle" style="margin: 0px; padding: 0px 10px; border: 0px; font-variant-numeric: inherit; font-variant-east-asian: inherit; font-weight: 600; font-stretch: inherit; font-size: 14px; line-height: 30px; font-family: &quot;Open Sans&quot;, sans-serif; vertical-align: baseline; float: left; box-sizing: border-box; width: 284.3px; color: rgb(9, 82, 121);">
+	<div class="col col-12 whiteBg nedenItem" style="margin: 0px; padding: 0px 10px; border: 0px; font-variant-numeric: inherit; font-variant-east-asian: inherit; font-stretch: inherit; font-size: 13px; line-height: inherit; vertical-align: baseline; float: left; box-sizing: border-box; width: 521.662px; color: rgb(0, 0, 0);">
+		<div class="row" style="margin: 0px -10px; padding: 0px; border: 0px; font: inherit; vertical-align: baseline; clear: both;">
+			<div class="col col-3 col-sm-2 col-xs-12" style="margin: 0px; padding: 0px 10px; border: 0px; font: inherit; vertical-align: baseline; float: left; box-sizing: border-box; width: 130.413px;">
+				<div class="image-wrapper fl" style="margin: 0px; padding: 0px 0px 165.613px; border: 0px; font: inherit; vertical-align: baseline; float: left; position: relative; width: 110.412px; overflow: hidden; height: 0px;">
+					<div class="imgInner" style="margin: 0px; padding: 0px; border: 0px; font: inherit; vertical-align: baseline; position: absolute; width: 110.412px; height: 165.613px; top: 0px; left: 0px; text-align: center; display: flex; align-items: center;">
+						<img alt="" src="https://www.robotistan.com/Data/EditorFiles/html_blok/neden/az_ode.png" style="margin: 0px auto; padding: 0px; border: 0px; font: inherit; vertical-align: baseline; max-width: 100%; height: auto; max-height: 100%; transition-timing-function: ease-in-out; transition-duration: 0.2s;" /></div>
+				</div>
+			</div>
+			<div class="box col-9 col-sm-10 col-xs-12 nedenDetail" style="margin: 0px; padding: 5px 10px; border: 0px; font: inherit; vertical-align: baseline; float: left; box-sizing: border-box; width: 391.237px;">
+				<div class="col col-12 nedenTitle" style="margin: 0px; padding: 0px 10px; border: 0px; font-style: inherit; font-variant: inherit; font-stretch: inherit; font-size: 14px; line-height: 30px; font-family: inherit; vertical-align: baseline; float: left; box-sizing: border-box; width: 371.237px; color: rgb(9, 82, 121);">
+					Canınız Nasıl İsterse &Ouml;yle &Ouml;deyin!</div>
+				<div class="col col-12 nedenText" style="margin: 0px; padding: 0px 10px; border: 0px; font-style: inherit; font-variant: inherit; font-stretch: inherit; font-size: 12px; line-height: 15px; font-family: inherit; vertical-align: baseline; float: left; box-sizing: border-box; width: 371.237px; color: rgb(80, 80, 80);">
+					Sitemizden vereceğiniz siparişlerde &ouml;demelerinizi kolayca yapmanız i&ccedil;in her şeyi d&uuml;ş&uuml;nd&uuml;k. G&uuml;venli &ouml;deme altyapımız sayesinde kredi kartınızla hızlı bir şekilde &ouml;demenizi ger&ccedil;ekl eştirebilr, dilerseniz taksit imkanlarımızdan faydalanabilirsiniz. Paypal veya BKM Express kullanıcısı olan m&uuml;şterilerimiz bu &ouml;deme yollarından pratik bir şekilde &ouml;demelerini yapabilir. Dileyen m&uuml;şterilerimiz kapıda &ouml;deme se&ccedil;eneğini tercih ederek &uuml;r&uuml;n&uuml;n&uuml; teslim alırken &ouml;demesini yapabilir. Robotistan&#39;dan sipariş verme keyfi :)</div>
+			</div>
+		</div>
+	</div>
+	<div class="col col-12 whiteBg nedenItem" style="margin: 0px; padding: 0px 10px; border: 0px; font-variant-numeric: inherit; font-variant-east-asian: inherit; font-stretch: inherit; font-size: 13px; line-height: inherit; vertical-align: baseline; float: left; box-sizing: border-box; width: 521.662px; color: rgb(0, 0, 0);">
+		<div class="row" style="margin: 0px -10px; padding: 0px; border: 0px; font: inherit; vertical-align: baseline; clear: both;">
+			<div class="col col-3 col-sm-2 col-xs-12" style="margin: 0px; padding: 0px 10px; border: 0px; font: inherit; vertical-align: baseline; float: left; box-sizing: border-box; width: 130.413px;">
+				<div class="image-wrapper fl" style="margin: 0px; padding: 0px 0px 165.613px; border: 0px; font: inherit; vertical-align: baseline; float: left; position: relative; width: 110.412px; overflow: hidden; height: 0px;">
+					<div class="imgInner" style="margin: 0px; padding: 0px; border: 0px; font: inherit; vertical-align: baseline; position: absolute; width: 110.412px; height: 165.613px; top: 0px; left: 0px; text-align: center; display: flex; align-items: center;">
+						<img alt="" src="https://www.robotistan.com/Data/EditorFiles/html_blok/neden/ayni_gun.png" style="margin: 0px auto; padding: 0px; border: 0px; font: inherit; vertical-align: baseline; max-width: 100%; height: auto; max-height: 100%; transition-timing-function: ease-in-out; transition-duration: 0.2s;" /></div>
+				</div>
+			</div>
+			<div class="box col-9 col-sm-10 col-xs-12 nedenDetail" style="margin: 0px; padding: 5px 10px; border: 0px; font: inherit; vertical-align: baseline; float: left; box-sizing: border-box; width: 391.237px;">
+				<div class="col col-12 nedenTitle" style="margin: 0px; padding: 0px 10px; border: 0px; font-style: inherit; font-variant: inherit; font-stretch: inherit; font-size: 14px; line-height: 30px; font-family: inherit; vertical-align: baseline; float: left; box-sizing: border-box; width: 371.237px; color: rgb(9, 82, 121);">
+					Binlerce &Uuml;r&uuml;n Aynı G&uuml;n Kargo&#39;da!</div>
+				<div class="col col-12 nedenText" style="margin: 0px; padding: 0px 10px; border: 0px; font-style: inherit; font-variant: inherit; font-stretch: inherit; font-size: 12px; line-height: 15px; font-family: inherit; vertical-align: baseline; float: left; box-sizing: border-box; width: 371.237px; color: rgb(80, 80, 80);">
+					Stoklarımızda bulunan binlerce &ccedil;eşit &uuml;r&uuml;n sayesinde elektronik malzeme satışında sizler i&ccedil;in yeni bir deneyin oluşturduk, ihtiya&ccedil;larınıza en hızlı şekilde ulaşın. Saat 15:00&#39;a kadar verdiğiniz siparişler aynı g&uuml;n kargoya verilmektedir. &Uuml;stelik anlaşmalı olduğumuz kargo firmalarından dilediğinizi &ouml;zg&uuml;rce se&ccedil;ebilirsiniz. İstanbul&#39;da bulunan m&uuml;şterilerimiz i&ccedil;in kurye ile aynı g&uuml;n teslimat se&ccedil;eneği de bulunmaktadır. Detaylar i&ccedil;in kargo ve teslimat sayfamıza g&ouml;z atabilirsiniz. Robotistan&#39;da siparişler ışık hızında teslim edilir.</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+</div>
+
+
+
+<div class=footer>
+<div class="col col-8 col-sm-12 altTabs" style="margin: 0px; padding: 0px 10px; border: 0px; font-variant-numeric: inherit; font-variant-east-asian: inherit; font-stretch: inherit; font-size: 13px; line-height: inherit; font-family: &quot;Open Sans&quot;, sans-serif; vertical-align: baseline; float: left; box-sizing: border-box; width: 879.987px; color: rgb(0, 0, 0); background-color: rgb(247, 247, 247);">
+	<div class="row" style="margin: 0px -10px; padding: 0px; border: 0px; font: inherit; vertical-align: baseline; clear: both;">
+		<div class="col col-3 col-md-4 col-sm-12" style="margin: 0px; padding: 0px 10px; border: 0px; font: inherit; vertical-align: baseline; float: left; box-sizing: border-box; width: 219.988px;">
+			<ul class="fl col-12" style="margin: 0px; padding: 0px; border: 0px; font: inherit; vertical-align: baseline; list-style-type: none; float: left; width: 199.988px;">
+			<li class="col-sm-12" style="margin: 0px 5px 0px 0px; padding: 0px; border: 0px; font: inherit; vertical-align: baseline; display: block;">
+			<h3 class="ease" style="transition-timing-function: ease-in-out; transition-duration: 0.2s; font-size: 13px; line-height: 20px; text-transform: capitalize; word-break: break-all; margin-top: 0px; margin-bottom: 15px; color: rgb(227, 61, 37);">
+				Bizi Tanıyın</h3>
+			<div class="fl col-12" style="margin: 0px; padding: 0px; border: 0px; font: inherit; vertical-align: baseline; float: left; width: 194.988px; height: auto !important;">
+				<ul class="fl col-12" style="margin: 0px; padding: 0px; border: 0px; font: inherit; vertical-align: baseline; list-style-type: none; float: left; width: 194.988px;">
+				<li class="col-sm-12" style="margin: 0px 5px 0px 0px; padding: 0px; border: 0px; font: inherit; vertical-align: baseline; display: block;"><a href="https://www.robotistan.com/hakkimizda.shtm" style="margin: 0px; padding: 4px 0px; border: 0px; font-style: inherit; font-variant: inherit; font-weight: inherit; font-stretch: inherit; font-size: 12px; line-height: 14px; font-family: inherit; vertical-align: baseline; text-decoration-line: none; color: rgb(9, 82, 121); cursor: pointer; transition-timing-function: ease-in-out; transition-duration: 0.2s; display: block;">Hakkımızda</a></li>
+				<li class="col-sm-12" style="margin: 0px 5px 0px 0px; padding: 0px; border: 0px; font: inherit; vertical-align: baseline; display: block;"><a href="https://www.robotistan.com/distributorluklerimiz.shtm" style="margin: 0px; padding: 4px 0px; border: 0px; font-style: inherit; font-variant: inherit; font-weight: inherit; font-stretch: inherit; font-size: 12px; line-height: 14px; font-family: inherit; vertical-align: baseline; text-decoration-line: none; color: rgb(9, 82, 121); cursor: pointer; transition-timing-function: ease-in-out; transition-duration: 0.2s; display: block;">Distrib&uuml;t&ouml;rl&uuml;klerimiz</a></li>
+				<li class="col-sm-12" style="margin: 0px 5px 0px 0px; padding: 0px; border: 0px; font: inherit; vertical-align: baseline; display: block;"><a href="https://www.robotistan.com/iletisim.xhtml" style="margin: 0px; padding: 4px 0px; border: 0px; font-style: inherit; font-variant: inherit; font-weight: inherit; font-stretch: inherit; font-size: 12px; line-height: 14px; font-family: inherit; vertical-align: baseline; text-decoration-line: none; color: rgb(9, 82, 121); cursor: pointer; transition-timing-function: ease-in-out; transition-duration: 0.2s; display: block;">İletişim</a></li>
+				<li class="col-sm-12" style="margin: 0px 5px 0px 0px; padding: 0px; border: 0px; font: inherit; vertical-align: baseline; display: block;"><a data-target="blank" href="https://maker.robotistan.com/" style="margin: 0px; padding: 4px 0px; border: 0px; font-style: inherit; font-variant: inherit; font-weight: inherit; font-stretch: inherit; font-size: 12px; line-height: 14px; font-family: inherit; vertical-align: baseline; text-decoration-line: none; color: rgb(9, 82, 121); cursor: pointer; transition-timing-function: ease-in-out; transition-duration: 0.2s; display: block;">Maker Blog</a></li>
+				<li class="col-sm-12" style="margin: 0px 5px 0px 0px; padding: 0px; border: 0px; font: inherit; vertical-align: baseline; display: block;"><a href="https://www.robotistan.com/dezavantajli-okullara-destek-programi.shtm" style="margin: 0px; padding: 4px 0px; border: 0px; font-style: inherit; font-variant: inherit; font-weight: inherit; font-stretch: inherit; font-size: 12px; line-height: 14px; font-family: inherit; vertical-align: baseline; text-decoration-line: none; color: rgb(9, 82, 121); cursor: pointer; transition-timing-function: ease-in-out; transition-duration: 0.2s; display: block;">Dezavantajlı Okul Destek Programı</a></li>
+				</ul>
+			</div>
+			</li>
+			</ul>
+		</div>
+		<div class="col col-3 col-md-4 col-sm-12" style="margin: 0px; padding: 0px 10px; border: 0px; font: inherit; vertical-align: baseline; float: left; box-sizing: border-box; width: 219.988px;">
+			<ul class="fl col-12" style="margin: 0px; padding: 0px; border: 0px; font: inherit; vertical-align: baseline; list-style-type: none; float: left; width: 199.988px;">
+			<li class="col-sm-12" style="margin: 0px 5px 0px 0px; padding: 0px; border: 0px; font: inherit; vertical-align: baseline; display: block;">
+			<h3 class="ease" style="transition-timing-function: ease-in-out; transition-duration: 0.2s; font-size: 13px; line-height: 20px; text-transform: capitalize; word-break: break-all; margin-top: 0px; margin-bottom: 15px; color: rgb(227, 61, 37);">
+				M&uuml;şteri Hizmetleri</h3>
+			<div class="fl col-12" style="margin: 0px; padding: 0px; border: 0px; font: inherit; vertical-align: baseline; float: left; width: 194.988px; height: auto !important;">
+				<ul class="fl col-12" style="margin: 0px; padding: 0px; border: 0px; font: inherit; vertical-align: baseline; list-style-type: none; float: left; width: 194.988px;">
+				<li class="col-sm-12" style="margin: 0px 5px 0px 0px; padding: 0px; border: 0px; font: inherit; vertical-align: baseline; display: block;"><a href="https://www.robotistan.com/privacy.shtm" style="margin: 0px; padding: 4px 0px; border: 0px; font-style: inherit; font-variant: inherit; font-weight: inherit; font-stretch: inherit; font-size: 12px; line-height: 14px; font-family: inherit; vertical-align: baseline; text-decoration-line: none; color: rgb(9, 82, 121); cursor: pointer; transition-timing-function: ease-in-out; transition-duration: 0.2s; display: block;">Kişisel Verilerin Korunması</a></li>
+				<li class="col-sm-12" style="margin: 0px 5px 0px 0px; padding: 0px; border: 0px; font: inherit; vertical-align: baseline; display: block;"><a href="https://www.robotistan.com/musteri-hizmetleri.xhtml" style="margin: 0px; padding: 4px 0px; border: 0px; font-style: inherit; font-variant: inherit; font-weight: inherit; font-stretch: inherit; font-size: 12px; line-height: 14px; font-family: inherit; vertical-align: baseline; text-decoration-line: none; color: rgb(9, 82, 121); cursor: pointer; transition-timing-function: ease-in-out; transition-duration: 0.2s; display: block;">Sık Sorulan Sorular</a></li>
+				<li class="col-sm-12" style="margin: 0px 5px 0px 0px; padding: 0px; border: 0px; font: inherit; vertical-align: baseline; display: block;"><a href="https://www.robotistan.com/teslimat-kosullari.shtm" style="margin: 0px; padding: 4px 0px; border: 0px; font-style: inherit; font-variant: inherit; font-weight: inherit; font-stretch: inherit; font-size: 12px; line-height: 14px; font-family: inherit; vertical-align: baseline; text-decoration-line: none; color: rgb(9, 82, 121); cursor: pointer; transition-timing-function: ease-in-out; transition-duration: 0.2s; display: block;">Kargo ve Teslimat</a></li>
+				<li class="col-sm-12" style="margin: 0px 5px 0px 0px; padding: 0px; border: 0px; font: inherit; vertical-align: baseline; display: block;"><a href="https://www.robotistan.com/garanti-ve-iade-kosullari.shtm" style="margin: 0px; padding: 4px 0px; border: 0px; font-style: inherit; font-variant: inherit; font-weight: inherit; font-stretch: inherit; font-size: 12px; line-height: 14px; font-family: inherit; vertical-align: baseline; text-decoration-line: none; color: rgb(9, 82, 121); cursor: pointer; transition-timing-function: ease-in-out; transition-duration: 0.2s; display: block;">Garanti ve İade</a></li>
+				<li class="col-sm-12" style="margin: 0px 5px 0px 0px; padding: 0px; border: 0px; font: inherit; vertical-align: baseline; display: block;"><a href="https://www.robotistan.com/terms-of-use.shtm" style="margin: 0px; padding: 4px 0px; border: 0px; font-style: inherit; font-variant: inherit; font-weight: inherit; font-stretch: inherit; font-size: 12px; line-height: 14px; font-family: inherit; vertical-align: baseline; text-decoration-line: none; color: rgb(9, 82, 121); cursor: pointer; transition-timing-function: ease-in-out; transition-duration: 0.2s; display: block;">Kullanım Şartları</a></li>
+				<li class="col-sm-12" style="margin: 0px 5px 0px 0px; padding: 0px; border: 0px; font: inherit; vertical-align: baseline; display: block;"><a href="https://www.robotistan.com/satis-sozlesmesi.shtm" style="margin: 0px; padding: 4px 0px; border: 0px; font-style: inherit; font-variant: inherit; font-weight: inherit; font-stretch: inherit; font-size: 12px; line-height: 14px; font-family: inherit; vertical-align: baseline; text-decoration-line: none; color: rgb(9, 82, 121); cursor: pointer; transition-timing-function: ease-in-out; transition-duration: 0.2s; display: block;">Satış S&ouml;zleşmesi</a></li>
+				<li class="col-sm-12" style="margin: 0px 5px 0px 0px; padding: 0px; border: 0px; font: inherit; vertical-align: baseline; display: block;"><a href="https://www.robotistan.com/puan-toplama.shtm" style="margin: 0px; padding: 4px 0px; border: 0px; font-style: inherit; font-variant: inherit; font-weight: inherit; font-stretch: inherit; font-size: 12px; line-height: 14px; font-family: inherit; vertical-align: baseline; text-decoration-line: none; color: rgb(9, 82, 121); cursor: pointer; transition-timing-function: ease-in-out; transition-duration: 0.2s; display: block;">Robotistan Puan</a></li>
+				<li class="col-sm-12" style="margin: 0px 5px 0px 0px; padding: 0px; border: 0px; font: inherit; vertical-align: baseline; display: block;"><a href="https://www.robotistan.com/kolay-odeme.shtm" style="margin: 0px; padding: 4px 0px; border: 0px; font-style: inherit; font-variant: inherit; font-weight: inherit; font-stretch: inherit; font-size: 12px; line-height: 14px; font-family: inherit; vertical-align: baseline; text-decoration-line: none; color: rgb(9, 82, 121); cursor: pointer; transition-timing-function: ease-in-out; transition-duration: 0.2s; display: block;">Kolay &Ouml;deme</a></li>
+				</ul>
+			</div>
+			</li>
+			</ul>
+		</div>
+		<div class="col col-3 col-md-4 col-sm-12" style="margin: 0px; padding: 0px 10px; border: 0px; font: inherit; vertical-align: baseline; float: left; box-sizing: border-box; width: 219.988px;">
+			<ul class="fl col-12" style="margin: 0px; padding: 0px; border: 0px; font: inherit; vertical-align: baseline; list-style-type: none; float: left; width: 199.988px;">
+			<li class="col-sm-12" style="margin: 0px 5px 0px 0px; padding: 0px; border: 0px; font: inherit; vertical-align: baseline; display: block;">
+			<h3 class="ease" style="transition-timing-function: ease-in-out; transition-duration: 0.2s; font-size: 13px; line-height: 20px; text-transform: capitalize; word-break: break-all; margin-top: 0px; margin-bottom: 15px; color: rgb(227, 61, 37);">
+				&Ouml;ne &Ccedil;ıkanlar</h3>
+			<div class="fl col-12" style="margin: 0px; padding: 0px; border: 0px; font: inherit; vertical-align: baseline; float: left; width: 194.988px; height: auto !important;">
+				<ul class="fl col-12" style="margin: 0px; padding: 0px; border: 0px; font: inherit; vertical-align: baseline; list-style-type: none; float: left; width: 194.988px;">
+				<li class="col-sm-12" style="margin: 0px 5px 0px 0px; padding: 0px; border: 0px; font: inherit; vertical-align: baseline; display: block;"><a href="https://www.robotistan.com/raspberry-pi-modelleri-1?utm_source=robotistan&amp;utm_medium=footer" style="margin: 0px; padding: 4px 0px; border: 0px; font-style: inherit; font-variant: inherit; font-weight: inherit; font-stretch: inherit; font-size: 12px; line-height: 14px; font-family: inherit; vertical-align: baseline; text-decoration-line: none; color: rgb(9, 82, 121); cursor: pointer; transition-timing-function: ease-in-out; transition-duration: 0.2s; display: block;">Raspberry Pi 4</a></li>
+				<li class="col-sm-12" style="margin: 0px 5px 0px 0px; padding: 0px; border: 0px; font: inherit; vertical-align: baseline; display: block;"><a href="https://www.robotistan.com/creality-3d-ender-3-pro?utm_source=robotistan&amp;utm_medium=footer" style="margin: 0px; padding: 4px 0px; border: 0px; font-style: inherit; font-variant: inherit; font-weight: inherit; font-stretch: inherit; font-size: 12px; line-height: 14px; font-family: inherit; vertical-align: baseline; text-decoration-line: none; color: rgb(9, 82, 121); cursor: pointer; transition-timing-function: ease-in-out; transition-duration: 0.2s; display: block;">Creality Ender 3 Pro</a></li>
+				<li class="col-sm-12" style="margin: 0px 5px 0px 0px; padding: 0px; border: 0px; font: inherit; vertical-align: baseline; display: block;"><a href="https://www.robotistan.com/matatalab?utm_source=robotistan&amp;utm_medium=footer" style="margin: 0px; padding: 4px 0px; border: 0px; font-style: inherit; font-variant: inherit; font-weight: inherit; font-stretch: inherit; font-size: 12px; line-height: 14px; font-family: inherit; vertical-align: baseline; text-decoration-line: none; color: rgb(9, 82, 121); cursor: pointer; transition-timing-function: ease-in-out; transition-duration: 0.2s; display: block;">Matatalab</a></li>
+				<li class="col-sm-12" style="margin: 0px 5px 0px 0px; padding: 0px; border: 0px; font: inherit; vertical-align: baseline; display: block;"><a href="https://www.robotistan.com/makeblock-mbot-ranger-bluetooth?utm_source=robotistan&amp;utm_medium=footer" style="margin: 0px; padding: 4px 0px; border: 0px; font-style: inherit; font-variant: inherit; font-weight: inherit; font-stretch: inherit; font-size: 12px; line-height: 14px; font-family: inherit; vertical-align: baseline; text-decoration-line: none; color: rgb(9, 82, 121); cursor: pointer; transition-timing-function: ease-in-out; transition-duration: 0.2s; display: block;">mBot Ranger</a></li>
+				<li class="col-sm-12" style="margin: 0px 5px 0px 0px; padding: 0px; border: 0px; font: inherit; vertical-align: baseline; display: block;"><a href="https://www.robotistan.com/makeblock-ultimate-robot-kit-v20?utm_source=robotistan&amp;utm_medium=footer" style="margin: 0px; padding: 4px 0px; border: 0px; font-style: inherit; font-variant: inherit; font-weight: inherit; font-stretch: inherit; font-size: 12px; line-height: 14px; font-family: inherit; vertical-align: baseline; text-decoration-line: none; color: rgb(9, 82, 121); cursor: pointer; transition-timing-function: ease-in-out; transition-duration: 0.2s; display: block;">Ultimate Robot Kit</a></li>
+				<li class="col-sm-12" style="margin: 0px 5px 0px 0px; padding: 0px; border: 0px; font: inherit; vertical-align: baseline; display: block;"><a href="https://www.robotistan.com/makeblock-laserbox?utm_source=robotistan&amp;utm_medium=footer" style="margin: 0px; padding: 4px 0px; border: 0px; font-style: inherit; font-variant: inherit; font-weight: inherit; font-stretch: inherit; font-size: 12px; line-height: 14px; font-family: inherit; vertical-align: baseline; text-decoration-line: none; color: rgb(9, 82, 121); cursor: pointer; transition-timing-function: ease-in-out; transition-duration: 0.2s; display: block;">LaserBox</a></li>
+				<li class="col-sm-12" style="margin: 0px 5px 0px 0px; padding: 0px; border: 0px; font: inherit; vertical-align: baseline; display: block;"><a href="https://www.robotistan.com/halocode-iot-tabanli-kodlama-platformu?utm_source=robotistan&amp;utm_medium=footer" style="margin: 0px; padding: 4px 0px; border: 0px; font-style: inherit; font-variant: inherit; font-weight: inherit; font-stretch: inherit; font-size: 12px; line-height: 14px; font-family: inherit; vertical-align: baseline; text-decoration-line: none; color: rgb(9, 82, 121); cursor: pointer; transition-timing-function: ease-in-out; transition-duration: 0.2s; display: block;">Halocode</a></li>
+				<li class="col-sm-12" style="margin: 0px 5px 0px 0px; padding: 0px; border: 0px; font: inherit; vertical-align: baseline; display: block;"><a href="https://www.robotistan.com/stemist-box?utm_source=robotistan&amp;utm_medium=footer" style="margin: 0px; padding: 4px 0px; border: 0px; font-style: inherit; font-variant: inherit; font-weight: inherit; font-stretch: inherit; font-size: 12px; line-height: 14px; font-family: inherit; vertical-align: baseline; text-decoration-line: none; color: rgb(9, 82, 121); cursor: pointer; transition-timing-function: ease-in-out; transition-duration: 0.2s; display: block;">StemistLab</a></li>
+				</ul>
+			</div>
+			</li>
+			</ul>
+		</div>
+		<div class="col col-3 col-md-4 col-sm-12" style="margin: 0px; padding: 0px 10px; border: 0px; font: inherit; vertical-align: baseline; float: left; box-sizing: border-box; width: 219.988px;">
+			<ul class="fl col-12" style="margin: 0px; padding: 0px; border: 0px; font: inherit; vertical-align: baseline; list-style-type: none; float: left; width: 199.988px;">
+			<li class="col-sm-12" style="margin: 0px 5px 0px 0px; padding: 0px; border: 0px; font: inherit; vertical-align: baseline; display: block;">
+			<h3 class="ease" style="transition-timing-function: ease-in-out; transition-duration: 0.2s; font-size: 13px; line-height: 20px; text-transform: capitalize; word-break: break-all; margin-top: 0px; margin-bottom: 15px; color: rgb(227, 61, 37);">
+				Pop&uuml;ler Sayfalar</h3>
+			<div class="fl col-12" style="margin: 0px; padding: 0px; border: 0px; font: inherit; vertical-align: baseline; float: left; width: 194.988px; height: auto !important;">
+				<ul class="fl col-12" style="margin: 0px; padding: 0px; border: 0px; font: inherit; vertical-align: baseline; list-style-type: none; float: left; width: 194.988px;">
+				<li class="col-sm-12" style="margin: 0px 5px 0px 0px; padding: 0px; border: 0px; font: inherit; vertical-align: baseline; display: block;"><a href="https://www.robotistan.com/arduino-setleri-1?utm_source=robotistan&amp;utm_medium=footer" style="margin: 0px; padding: 4px 0px; border: 0px; font-style: inherit; font-variant: inherit; font-weight: inherit; font-stretch: inherit; font-size: 12px; line-height: 14px; font-family: inherit; vertical-align: baseline; text-decoration-line: none; color: rgb(9, 82, 121); cursor: pointer; transition-timing-function: ease-in-out; transition-duration: 0.2s; display: block;">Arduino Setleri</a></li>
+				<li class="col-sm-12" style="margin: 0px 5px 0px 0px; padding: 0px; border: 0px; font: inherit; vertical-align: baseline; display: block;"><a href="https://www.robotistan.com/arduino-uno-r3-klon-usb-kablo-hediyeli-usb-chip-ch340?utm_source=robotistan&amp;utm_medium=footer" style="margin: 0px; padding: 4px 0px; border: 0px; font-style: inherit; font-variant: inherit; font-weight: inherit; font-stretch: inherit; font-size: 12px; line-height: 14px; font-family: inherit; vertical-align: baseline; text-decoration-line: none; color: rgb(9, 82, 121); cursor: pointer; transition-timing-function: ease-in-out; transition-duration: 0.2s; display: block;">Arduino Uno CH340</a></li>
+				<li class="col-sm-12" style="margin: 0px 5px 0px 0px; padding: 0px; border: 0px; font: inherit; vertical-align: baseline; display: block;"><a href="https://www.robotistan.com/li-po-pil?utm_source=robotistan&amp;utm_medium=footer" style="margin: 0px; padding: 4px 0px; border: 0px; font-style: inherit; font-variant: inherit; font-weight: inherit; font-stretch: inherit; font-size: 12px; line-height: 14px; font-family: inherit; vertical-align: baseline; text-decoration-line: none; color: rgb(9, 82, 121); cursor: pointer; transition-timing-function: ease-in-out; transition-duration: 0.2s; display: block;">Lipo Pil - Batarya - Sarj Aleti</a></li>
+				<li class="col-sm-12" style="margin: 0px 5px 0px 0px; padding: 0px; border: 0px; font: inherit; vertical-align: baseline; display: block;"><a href="https://www.robotistan.com/3d-filament?utm_source=robotistan&amp;utm_medium=footer" style="margin: 0px; padding: 4px 0px; border: 0px; font-style: inherit; font-variant: inherit; font-weight: inherit; font-stretch: inherit; font-size: 12px; line-height: 14px; font-family: inherit; vertical-align: baseline; text-decoration-line: none; color: rgb(9, 82, 121); cursor: pointer; transition-timing-function: ease-in-out; transition-duration: 0.2s; display: block;">3D Filamentler</a></li>
+				<li class="col-sm-12" style="margin: 0px 5px 0px 0px; padding: 0px; border: 0px; font: inherit; vertical-align: baseline; display: block;"><a href="https://www.robotistan.com/waveshare?utm_source=robotistan&amp;utm_medium=footer" style="margin: 0px; padding: 4px 0px; border: 0px; font-style: inherit; font-variant: inherit; font-weight: inherit; font-stretch: inherit; font-size: 12px; line-height: 14px; font-family: inherit; vertical-align: baseline; text-decoration-line: none; color: rgb(9, 82, 121); cursor: pointer; transition-timing-function: ease-in-out; transition-duration: 0.2s; display: block;">Waveshare</a></li>
+				<li class="col-sm-12" style="margin: 0px 5px 0px 0px; padding: 0px; border: 0px; font: inherit; vertical-align: baseline; display: block;"><a href="https://www.robotistan.com/raspberry-pi-setleri-2?utm_source=robotistan&amp;utm_medium=footer" style="margin: 0px; padding: 4px 0px; border: 0px; font-style: inherit; font-variant: inherit; font-weight: inherit; font-stretch: inherit; font-size: 12px; line-height: 14px; font-family: inherit; vertical-align: baseline; text-decoration-line: none; color: rgb(9, 82, 121); cursor: pointer; transition-timing-function: ease-in-out; transition-duration: 0.2s; display: block;">Raspberry Pi Setleri</a></li>
+				<li class="col-sm-12" style="margin: 0px 5px 0px 0px; padding: 0px; border: 0px; font: inherit; vertical-align: baseline; display: block;"><a href="https://www.robotistan.com/makeblock-mbot-bluetooth-kiti-v11-mavi?utm_source=robotistan&amp;utm_medium=footer" style="margin: 0px; padding: 4px 0px; border: 0px; font-style: inherit; font-variant: inherit; font-weight: inherit; font-stretch: inherit; font-size: 12px; line-height: 14px; font-family: inherit; vertical-align: baseline; text-decoration-line: none; color: rgb(9, 82, 121); cursor: pointer; transition-timing-function: ease-in-out; transition-duration: 0.2s; display: block;">Mbot - Robot Kiti</a></li>
+				<li class="col-sm-12" style="margin: 0px 5px 0px 0px; padding: 0px; border: 0px; font: inherit; vertical-align: baseline; display: block;"><a href="https://www.robotistan.com/raspberry-pi-ekranlari?utm_source=robotistan&amp;utm_medium=footer" style="margin: 0px; padding: 4px 0px; border: 0px; font-style: inherit; font-variant: inherit; font-weight: inherit; font-stretch: inherit; font-size: 12px; line-height: 14px; font-family: inherit; vertical-align: baseline; text-decoration-line: none; color: rgb(9, 82, 121); cursor: pointer; transition-timing-function: ease-in-out; transition-duration: 0.2s; display: block;">Raspberry Pi Ekranları</a></li>
+				</ul>
+			</div>
+			</li>
+			</ul>
+		</div>
+		<div class="col col-3 col-md-4 col-sm-12" style="margin: 0px; padding: 0px 10px; border: 0px; font: inherit; vertical-align: baseline; float: left; box-sizing: border-box; width: 219.988px; clear: both;">
+			<ul class="fl col-12" style="margin: 0px; padding: 0px; border: 0px; font: inherit; vertical-align: baseline; list-style-type: none; float: left; width: 199.988px;">
+			<li class="col-sm-12" style="margin: 0px 5px 0px 0px; padding: 0px; border: 0px; font: inherit; vertical-align: baseline; display: block;">
+			<h3 class="ease" style="transition-timing-function: ease-in-out; transition-duration: 0.2s; font-size: 13px; line-height: 20px; text-transform: capitalize; word-break: break-all; margin-top: 0px; margin-bottom: 15px; color: rgb(227, 61, 37);">
+				Hızlı Erişim</h3>
+			<div class="fl col-12" style="margin: 0px; padding: 0px; border: 0px; font: inherit; vertical-align: baseline; float: left; width: 194.988px; height: auto !important;">
+				<ul class="fl col-12" style="margin: 0px; padding: 0px; border: 0px; font: inherit; vertical-align: baseline; list-style-type: none; float: left; width: 194.988px;">
+				<li class="col-sm-12" style="margin: 0px 5px 0px 0px; padding: 0px; border: 0px; font: inherit; vertical-align: baseline; display: block;"><a href="https://www.robotistan.com/" style="margin: 0px; padding: 4px 0px; border: 0px; font-style: inherit; font-variant: inherit; font-weight: inherit; font-stretch: inherit; font-size: 12px; line-height: 14px; font-family: inherit; vertical-align: baseline; text-decoration-line: none; color: rgb(9, 82, 121); cursor: pointer; transition-timing-function: ease-in-out; transition-duration: 0.2s; display: block;">Anasayfa</a></li>
+				<li class="col-sm-12" style="margin: 0px 5px 0px 0px; padding: 0px; border: 0px; font: inherit; vertical-align: baseline; display: block;"><a href="https://www.robotistan.com/robot-malzemeleri.xhtml" style="margin: 0px; padding: 4px 0px; border: 0px; font-style: inherit; font-variant: inherit; font-weight: inherit; font-stretch: inherit; font-size: 12px; line-height: 14px; font-family: inherit; vertical-align: baseline; text-decoration-line: none; color: rgb(9, 82, 121); cursor: pointer; transition-timing-function: ease-in-out; transition-duration: 0.2s; display: block;">Yeni &Uuml;r&uuml;nler</a></li>
+				<li class="col-sm-12" style="margin: 0px 5px 0px 0px; padding: 0px; border: 0px; font: inherit; vertical-align: baseline; display: block;"><a href="https://www.robotistan.com/indirimli-urunler.xhtml" style="margin: 0px; padding: 4px 0px; border: 0px; font-style: inherit; font-variant: inherit; font-weight: inherit; font-stretch: inherit; font-size: 12px; line-height: 14px; font-family: inherit; vertical-align: baseline; text-decoration-line: none; color: rgb(9, 82, 121); cursor: pointer; transition-timing-function: ease-in-out; transition-duration: 0.2s; display: block;">İndirimdekiler</a></li>
+				<li class="col-sm-12" style="margin: 0px 5px 0px 0px; padding: 0px; border: 0px; font: inherit; vertical-align: baseline; display: block;"><a href="https://www.robotistan.com/Sepet.php" style="margin: 0px; padding: 4px 0px; border: 0px; font-style: inherit; font-variant: inherit; font-weight: inherit; font-stretch: inherit; font-size: 12px; line-height: 14px; font-family: inherit; vertical-align: baseline; text-decoration-line: none; color: rgb(9, 82, 121); cursor: pointer; transition-timing-function: ease-in-out; transition-duration: 0.2s; display: block;">Sepetim</a></li>
+				<li class="col-sm-12" style="margin: 0px 5px 0px 0px; padding: 0px; border: 0px; font: inherit; vertical-align: baseline; display: block;"><a href="https://www.robotistan.com/kategori-konu-listesi" style="margin: 0px; padding: 4px 0px; border: 0px; font-style: inherit; font-variant: inherit; font-weight: inherit; font-stretch: inherit; font-size: 12px; line-height: 14px; font-family: inherit; vertical-align: baseline; text-decoration-line: none; color: rgb(9, 82, 121); cursor: pointer; transition-timing-function: ease-in-out; transition-duration: 0.2s; display: block;">T&uuml;m Kategoriler</a></li>
+				<li class="col-sm-12" style="margin: 0px 5px 0px 0px; padding: 0px; border: 0px; font: inherit; vertical-align: baseline; display: block;"><a data-target="blank" href="https://www.robotistan.com/tubitak-destek-programi.shtm" style="margin: 0px; padding: 4px 0px; border: 0px; font-style: inherit; font-variant: inherit; font-weight: inherit; font-stretch: inherit; font-size: 12px; line-height: 14px; font-family: inherit; vertical-align: baseline; text-decoration-line: none; color: rgb(9, 82, 121); cursor: pointer; transition-timing-function: ease-in-out; transition-duration: 0.2s; display: block;">T&uuml;bitak Projeleri Robotistan Destek Formu</a></li>
+				</ul>
+			</div>
+			</li>
+			</ul>
+		</div>
+		<div class="col col-3 col-md-4 col-sm-12" style="margin: 0px; padding: 0px 10px; border: 0px; font: inherit; vertical-align: baseline; float: left; box-sizing: border-box; width: 219.988px;">
+			<ul class="fl col-12" style="margin: 0px; padding: 0px; border: 0px; font: inherit; vertical-align: baseline; list-style-type: none; float: left; width: 199.988px;">
+			<li class="col-sm-12" style="margin: 0px 5px 0px 0px; padding: 0px; border: 0px; font: inherit; vertical-align: baseline; display: block;">
+			<h3 class="ease" style="transition-timing-function: ease-in-out; transition-duration: 0.2s; font-size: 13px; line-height: 20px; text-transform: capitalize; word-break: break-all; margin-top: 0px; margin-bottom: 15px; color: rgb(227, 61, 37);">
+				&Uuml;ye</h3>
+			<div class="fl col-12" style="margin: 0px; padding: 0px; border: 0px; font: inherit; vertical-align: baseline; float: left; width: 194.988px; height: auto !important;">
+				<ul class="fl col-12" style="margin: 0px; padding: 0px; border: 0px; font: inherit; vertical-align: baseline; list-style-type: none; float: left; width: 194.988px;">
+				<li class="col-sm-12" style="margin: 0px 5px 0px 0px; padding: 0px; border: 0px; font: inherit; vertical-align: baseline; display: block;"><a href="https://www.robotistan.com/uye-kayit.xhtml" style="margin: 0px; padding: 4px 0px; border: 0px; font-style: inherit; font-variant: inherit; font-weight: inherit; font-stretch: inherit; font-size: 12px; line-height: 14px; font-family: inherit; vertical-align: baseline; text-decoration-line: none; color: rgb(9, 82, 121); cursor: pointer; transition-timing-function: ease-in-out; transition-duration: 0.2s; display: block;">Yeni &Uuml;yelik</a></li>
+				<li class="col-sm-12" style="margin: 0px 5px 0px 0px; padding: 0px; border: 0px; font: inherit; vertical-align: baseline; display: block;"><a href="https://www.robotistan.com/uye-girisi-sayfasi.xhtml" style="margin: 0px; padding: 4px 0px; border: 0px; font-style: inherit; font-variant: inherit; font-weight: inherit; font-stretch: inherit; font-size: 12px; line-height: 14px; font-family: inherit; vertical-align: baseline; text-decoration-line: none; color: rgb(9, 82, 121); cursor: pointer; transition-timing-function: ease-in-out; transition-duration: 0.2s; display: block;">&Uuml;ye Girişi</a></li>
+				</ul>
+			</div>
+			</li>
+			</ul>
+		</div>
+	</div>
+	<div class="box col-12 col-sm-6 col-xs-12" id="social" style="margin: 20px 0px 0px; padding: 10px; border: 0px; font: inherit; vertical-align: baseline; float: left; box-sizing: border-box; width: 859.987px;">
+		<div class="row" style="margin: 0px -10px; padding: 0px; border: 0px; font: inherit; vertical-align: baseline; clear: both;">
+			<span style="margin: 0px; padding: 0px; border: 0px; font-style: inherit; font-variant: inherit; font-weight: 700; font-stretch: inherit; line-height: 20px; font-family: inherit; vertical-align: baseline; text-transform: capitalize; word-break: break-all; display: block; color: rgb(227, 61, 37);">SOSYAL MEDYADA BİZİ TAKİP EDİN</span><ul style="margin: 0px; padding: 10px 0px 0px; border: 0px; font: inherit; vertical-align: baseline; list-style-type: none;">
+			<li style="margin: 0px 5px 0px 0px; padding: 0px 10px 10px 0px; border: 0px; font: inherit; vertical-align: baseline; float: left; width: 30px; height: 30px; display: block;"><a data-target="blank" href="https://www.facebook.com/Robotistancom" rel="nofollow" style="margin: 0px; padding: 4px 0px; border: 0px; font-style: inherit; font-variant: inherit; font-weight: inherit; font-stretch: inherit; font-size: 12px; line-height: 14px; font-family: inherit; vertical-align: baseline; text-decoration-line: none; color: rgb(9, 82, 121); cursor: pointer; transition-timing-function: ease-in-out; transition-duration: 0.2s; float: left; width: 30px; height: 30px; display: block;"><img alt="Sosyal Medya - 1" src="https://www.robotistan.com/Data/EditorFiles/fb.jpg" style="margin: 0px; padding: 0px; border: 0px; font: inherit; vertical-align: baseline; max-width: 100%; height: 30px; float: left; width: 30px;" /></a></li>
+			<li style="margin: 0px 5px 0px 0px; padding: 0px 10px 10px 0px; border: 0px; font: inherit; vertical-align: baseline; float: left; width: 30px; height: 30px; display: block;"><a data-target="blank" href="https://twitter.com/Robotistan" rel="nofollow" style="margin: 0px; padding: 4px 0px; border: 0px; font-style: inherit; font-variant: inherit; font-weight: inherit; font-stretch: inherit; font-size: 12px; line-height: 14px; font-family: inherit; vertical-align: baseline; text-decoration-line: none; color: rgb(9, 82, 121); cursor: pointer; transition-timing-function: ease-in-out; transition-duration: 0.2s; float: left; width: 30px; height: 30px; display: block;"><img alt="Sosyal Medya - 2" src="https://www.robotistan.com/Data/EditorFiles/tw.jpg" style="margin: 0px; padding: 0px; border: 0px; font: inherit; vertical-align: baseline; max-width: 100%; height: 30px; float: left; width: 30px;" /></a></li>
+			<li style="margin: 0px 5px 0px 0px; padding: 0px 10px 10px 0px; border: 0px; font: inherit; vertical-align: baseline; float: left; width: 30px; height: 30px; display: block;"><a data-target="blank" href="https://instagram.com/robotistan/" rel="nofollow" style="margin: 0px; padding: 4px 0px; border: 0px; font-style: inherit; font-variant: inherit; font-weight: inherit; font-stretch: inherit; font-size: 12px; line-height: 14px; font-family: inherit; vertical-align: baseline; text-decoration-line: none; color: rgb(9, 82, 121); cursor: pointer; transition-timing-function: ease-in-out; transition-duration: 0.2s; float: left; width: 30px; height: 30px; display: block;"><img alt="Sosyal Medya - 3" src="https://www.robotistan.com/Data/EditorFiles/ins.jpg" style="margin: 0px; padding: 0px; border: 0px; font: inherit; vertical-align: baseline; max-width: 100%; height: 30px; float: left; width: 30px;" /></a></li>
+			<li style="margin: 0px 5px 0px 0px; padding: 0px 10px 10px 0px; border: 0px; font: inherit; vertical-align: baseline; float: left; width: 30px; height: 30px; display: block;"><a data-target="blank" href="https://www.youtube.com/c/robotistan" rel="nofollow" style="margin: 0px; padding: 4px 0px; border: 0px; font-style: inherit; font-variant: inherit; font-weight: inherit; font-stretch: inherit; font-size: 12px; line-height: 14px; font-family: inherit; vertical-align: baseline; text-decoration-line: none; color: rgb(9, 82, 121); cursor: pointer; transition-timing-function: ease-in-out; transition-duration: 0.2s; float: left; width: 30px; height: 30px; display: block;"><img alt="Sosyal Medya - 6" src="https://www.robotistan.com/Data/EditorFiles/youtube.png" style="margin: 0px; padding: 0px; border: 0px; font: inherit; vertical-align: baseline; max-width: 100%; height: 30px; float: left; width: 30px;" /></a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="box col-6 col-xs-12 storeLinks plNone" style="margin: 0px; padding-top: 10px; padding-right: 0px !important; padding-bottom: 10px; padding-left: 0px !important; border: 0px; font: inherit; vertical-align: baseline; float: left; box-sizing: border-box; width: 429.987px;">
+		<div class="row" style="margin: 0px -10px; padding: 0px; border: 0px; font: inherit; vertical-align: baseline; clear: both;">
+			<a class="col col-6" href="https://itunes.apple.com/app/apple-store/id1228046962?pt=118631851&amp;ct=Site%20link&amp;mt=8" style="margin: 0px; padding: 0px 10px; border: 0px; font: inherit; vertical-align: baseline; text-decoration-line: none; cursor: pointer; transition-timing-function: ease-in-out; transition-duration: 0.2s; float: left; box-sizing: border-box; width: 224.988px;" target="blank"><img alt="" src="https://www.robotistan.com/Data/EditorFiles/app_store.jpg" style="margin: 0px; padding: 0px; border: 0px; font: inherit; vertical-align: baseline; max-width: 100%; height: auto;" /></a><a class="col col-6" href="https://play.google.com/store/apps/details?id=com.tsoft.robotistan&amp;referrer=utm_source%3Drobotistancom" style="margin: 0px; padding: 0px 10px; border: 0px; font: inherit; vertical-align: baseline; text-decoration-line: none; cursor: pointer; transition-timing-function: ease-in-out; transition-duration: 0.2s; float: left; box-sizing: border-box; width: 224.988px;" target="blank"><img alt="" src="https://www.robotistan.com/Data/EditorFiles/play_store.jpg" style="margin: 0px; padding: 0px; border: 0px; font: inherit; vertical-align: baseline; max-width: 100%; height: auto;" /></a></div>
+	</div>
+</div>
+<div class="col col-4 col-sm-12 a-center mutluMusteriBar" style="margin: 0px; padding: 0px 10px; border: 0px; font-variant-numeric: inherit; font-variant-east-asian: inherit; font-stretch: inherit; font-size: 13px; line-height: inherit; font-family: &quot;Open Sans&quot;, sans-serif; vertical-align: baseline; text-align: center; float: left; box-sizing: border-box; width: 439.987px; color: rgb(0, 0, 0); background-color: rgb(247, 247, 247);">
+	<div class="col col-sm-6 col-xs-12" style="margin: 0px; padding: 0px 10px; border: 0px; font: inherit; vertical-align: baseline; float: left; box-sizing: border-box;">
+		<div class="row mb" style="margin: 0px -10px 10px; padding: 0px; border: 0px; font: inherit; vertical-align: baseline; clear: both;">
+			<a class="col col-12" href="https://www.google.com/shopping/seller?q=robotistan.com&amp;hl=tr" style="margin: 0px; padding: 0px 10px; border: 0px; font: inherit; vertical-align: baseline; text-decoration-line: none; cursor: pointer; transition-timing-function: ease-in-out; transition-duration: 0.2s; float: left; box-sizing: border-box; width: 419.987px;"><img alt="müşteri yorumları" src="https://www.robotistan.com/Data/EditorFiles/yorum.jpg" style="margin: 0px; padding: 0px; border: 0px; font: inherit; vertical-align: baseline; max-width: 100%; height: auto;" /></a></div>
+	</div>
+	<div class="box col-12 col-sm-6 col-xs-12 a-center" style="margin: 0px; padding: 10px; border: 0px; font: inherit; vertical-align: baseline; float: left; box-sizing: border-box; width: 419.987px;">
+		<div class="row" style="margin: 0px -10px; padding: 0px; border: 0px; font: inherit; vertical-align: baseline; clear: both;">
+			<a class="col col-6" href="https://www.robotistan.com/deloitte-fast-50.shtm" style="margin: 0px; padding: 0px 10px; border: 0px; font: inherit; vertical-align: baseline; text-decoration-line: none; cursor: pointer; transition-timing-function: ease-in-out; transition-duration: 0.2s; float: left; box-sizing: border-box; width: 209.988px;"><img alt="technology fast 50 2016 turkey" src="https://www.robotistan.com/Data/EditorFiles/fast.jpg" style="margin: 0px; padding: 0px; border: 0px; font: inherit; vertical-align: baseline; max-width: 100%; height: auto;" /></a><a class="col col-6" href="https://www.robotistan.com/deloitte-fast-50.shtm" style="margin: 0px; padding: 0px 10px; border: 0px; font: inherit; vertical-align: baseline; text-decoration-line: none; cursor: pointer; transition-timing-function: ease-in-out; transition-duration: 0.2s; float: left; box-sizing: border-box; width: 209.988px;"><img alt="technology fast 500 2016 emea" src="https://www.robotistan.com/Data/EditorFiles/fast2.jpg" style="margin: 0px; padding: 0px; border: 0px; font: inherit; vertical-align: baseline; max-width: 100%; height: auto;" /></a></div>
+	</div>
+</div>
+
+</div>
+
+</div>
+
+
+
 
 
 
@@ -178,36 +1027,15 @@ window.onclick = function(event) {
   }
 }
 
-var slideIndex = 1;
-showSlides(slideIndex);
 
-// Next/previous controls
-function plusSlides(n) {
-  showSlides(slideIndex += n);
-}
 
-// Thumbnail image controls
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
-
-function showSlides(n) {
-  var i;
-  var slides = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("dot");
-  if (n > slides.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";
-  }
-  for (i = 0; i < dots.length; i++) {
-      dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex-1].style.display = "block";
-  dots[slideIndex-1].className += " active";
-}
 
 </script>
+ <script src="index.js"></script>
+ <script src="index1.js"></script>
+  <script src="index2.js"></script>
+  <script src="index3.js"></script>
+ <script>Vue.component(VueCarousel.name, VueCarousel);</script>
 </body>
 </html>
 	
