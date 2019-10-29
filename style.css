@@ -490,9 +490,9 @@ width:900px;
 	position:absolute;
 	
 	z-index:2;
-	height:300px;
+	height:340px;
 	width:200px;
-	margin-top:-350px;
+	margin-top:-310px;
 	opacity:0;
 	
 	
@@ -601,9 +601,10 @@ h1 {
 }
 
 .satinall-satir{
-	height:50px;
+	height:60px;
 	width:200px;
 	margin-left:20px;
+	margin-top:100px;
 	
 }
 
@@ -614,9 +615,13 @@ h1 {
 }
 
 .satinal-satir2{
-	height:50px;
-	margin-left:40px;
-	margin-top:20px;
+	height:123px;
+	
+	margin-top:150px;
+	background:#eaeaea;
+	width:200px;
+
+
 	
 	
 	
@@ -624,11 +629,21 @@ h1 {
 
 
 .satinall-satir2{
-	height:50px;
-	margin-left:60px;
+	height:98px;
+	
 	margin-top:20px;
+	background:#eaeaea;
+	width:236px;
+
 	
 	
+	
+}
+
+.btnekle2{
+	
+	margin-left:65px;
+	margin-top:35px;
 	
 }
 
@@ -639,6 +654,14 @@ h1 {
 	width:220px;
 	float:left;
 	
+}
+
+.btnekle{
+	margin-left:50px;
+	margin-top:45px;
+	position:absolute;
+	z-index:99999;
+	display:inline-block;
 }
 
 .abonedoldur2{
