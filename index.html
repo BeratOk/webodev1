@@ -10,8 +10,13 @@
 	<!-- Main CSS -->
 	<link rel="stylesheet" href="style.css" />
 	
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
 	
 	<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+   
    
  
   <link href="https://unpkg.com/vueperslides/dist/vueperslides.css" rel="stylesheet">
@@ -56,10 +61,25 @@
 
 <div class="menuyani">
 <div class=robo>
-<a href="#"><img src="images/robo.png"  width="60" height="50" alt=""></a>
+<div id="app7">
+  <button id="show-modal" class="uyelikbuton" @click="showModal = true"><img src="images/robo.png" /></button>
+  <!-- use the modal component, pass in the prop -->
+  <modal v-if="showModal" @close="showModal = false">
+    <!--
+      you can use custom content here to overwrite
+      default content
+    -->
+    <h3 slot="header">custom header</h3>
+  </modal>
+</div>
 </div>
 <div class=sepet>
-<a href="#"><img src="images/sepet.png" width="55" height="45" alt=""></a>
+ <div class="row">
+    <div class="col">
+      <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#cart">Sepet (<span class="total-count"></span>)</button></div>
+  </div>
+  
+  
 </div>
 </div>
 
@@ -474,47 +494,167 @@
       <div class="card-carousel--overflow-container">
 	  
         <div class="card-carousel-cards" :style="{ transform: 'translateX' + '(' + currentOffset + 'px' + ')'}">
-          <div class="card-carousel--card"><img height="250" width="200" src="images/cart1.jpg"/>
+        
+		 <div class="card-carousel--card"><img height="250" width="200" src="images/cart1.jpg"/>
+		  <div class=kurtarici>
+		  <div class=urunitem> 
             <div class="card-carousel--card--footer">
               <a>Arduino UNO R3 (Klon)</a>
 			  <p><span style="font-size:20px;"><span style="font-family:tahoma,geneva,sans-serif;"><span style="color:#696969;"><strong>40.37 TL</strong></span></span></span></p>
 
             </div>
+			</div>
+			<div class=satinal>
+			<div class=satinalgenel>
+			<div class=satinal-satir>
+			<div class=azalt>
+			<a>-</a>
+			</div>
+			<div class=miktar>
+			</div>
+			<div class=arttir>
+			<a>+</a>
+			</div>
+			</div>
+			<div class=satinal-satir2>
+          <a href="#" data-name="Orange" data-price="0.5" class="add-to-cart btn btn-primary">Sepete Ekle</a>
+			</div>
+			</div>
+			</div>
           </div>
+		  </div>
 		 
 		 <div class="card-carousel--card"><img height="250" width="200" src="images/cart2.jpg"/>
+		 <div class=urunitem>
             <div class="card-carousel--card--footer">
               <a>HC06 Modül Kartı</a>
 			  <p><span style="font-size:20px;"><span style="font-family:tahoma,geneva,sans-serif;"><span style="color:#696969;"><strong>23.32 TL</strong></span></span></span></p>
             </div>
+			</div>
+			<div class=satinal>
+			<div class=satinalgenel>
+			<div class=satinal-satir>
+			<div class=azalt>
+			<a>-</a>
+			</div>
+			<div class=miktar>
+			</div>
+			<div class=arttir>
+			<a>+</a>
+			</div>
+			</div>
+			<div class=satinal-satir2>
+          <a href="#" data-name="Orange" data-price="0.5" class="add-to-cart btn btn-primary">Sepete Ekle</a>
+			</div>
+			</div>
+			</div>
           </div>
 		  
 		  <div class="card-carousel--card"><img height="250" width="200" src="images/cart3.jpg"/>
+		  <div class=urunitem>
             <div class="card-carousel--card--footer">
               <a>Arduino Nano Klon</a>
 			  <p><span style="font-size:20px;"><span style="font-family:tahoma,geneva,sans-serif;"><span style="color:#696969;"><strong>21.39 TL</strong></span></span></span></p>
             </div>
+			</div>
+			<div class=satinal>
+			<div class=satinalgenel>
+			<div class=satinal-satir>
+			<div class=azalt>
+			<a>-</a>
+			</div>
+			<div class=miktar>
+			</div>
+			<div class=arttir>
+			<a>+</a>
+			</div>
+			</div>
+			<div class=satinal-satir2>
+          <a href="#" data-name="Orange" data-price="0.5" class="add-to-cart btn btn-primary">Sepete Ekle</a>
+			</div>
+			</div>
+			</div>
           </div>
 		  
+		  
+		  
 		  <div class="card-carousel--card"><img height="250" width="200" src="images/cart4.jpg"/>
+		  <div class=urunitem>
             <div class="card-carousel--card--footer">
               <a>Raspberry Pi 3</a>
 			  <p><span style="font-size:20px;"><span style="font-family:tahoma,geneva,sans-serif;"><span style="color:#696969;"><strong>273.37 TL</strong></span></span></span></p>
             </div>
+			</div>
+			<div class=satinal>
+			<div class=satinalgenel>
+			<div class=satinal-satir>
+			<div class=azalt>
+			<a>-</a>
+			</div>
+			<div class=miktar>
+			</div>
+			<div class=arttir>
+			<a>+</a>
+			</div>
+			</div>
+			<div class=satinal-satir2>
+          <a href="#" data-name="Orange" data-price="0.5" class="add-to-cart btn btn-primary">Sepete Ekle</a>
+			</div>
+			</div>
+			</div>
+			
           </div>
 		  
 		  <div class="card-carousel--card"><img height="250" width="200" src="images/cart5.jpg"/>
+		  <div class=urunitem>
             <div class="card-carousel--card--footer">
-              <a>NodeMCU Lodin</a>
+              <a>NodeMCU </a>
 			  <p><span style="font-size:20px;"><span style="font-family:tahoma,geneva,sans-serif;"><span style="color:#696969;"><strong>268.37 TL</strong></span></span></span></p>
             </div>
+			</div>
+			<div class=satinal>
+			<div class=satinalgenel>
+			<div class=satinal-satir>
+			<div class=azalt>
+			<a>-</a>
+			</div>
+			<div class=miktar>
+			</div>
+			<div class=arttir>
+			<a>+</a>
+			</div>
+			</div>
+			<div class=satinal-satir2>
+          <a href="#" data-name="Orange" data-price="0.5" class="add-to-cart btn btn-primary">Sepete Ekle</a>
+			</div>
+			</div>
+			</div>
           </div>
 		  
 		  <div class="card-carousel--card"><img height="250" width="200" src="images/cart6.jpg"/>
+		  <div class=urunitem>
             <div class="card-carousel--card--footer">
-              <a>Raspberry Pi 4</a>
+              <a>Raspberry</a>
 			  <p><span style="font-size:20px;"><span style="font-family:tahoma,geneva,sans-serif;"><span style="color:#696969;"><strong>650.37 TL</strong></span></span></span></p>
             </div>
+			</div>
+			<div class=satinal>
+			<div class=satinalgenel>
+			<div class=satinal-satir>
+			<div class=azalt>
+			<a>-</a>
+			</div>
+			<div class=miktar>
+			</div>
+			<div class=arttir>
+			<a>+</a>
+			</div>
+			</div>
+			<div class=satinal-satir2>
+          <a href="#" data-name="Orange" data-price="0.5" class="add-to-cart btn btn-primary">Sepete Ekle</a>
+			</div>
+			</div>
+			</div>
           </div>
 		
         </div>
@@ -584,19 +724,52 @@
 <div class=urun>
 <div class="card-carousel--card"><img height="250" width="200" src="images/urun1.jpg"/>
             <div class="card-carousel--card--footer">
-              <a>Arduino UNO R3 (Klon)</a>
-			  <p><span style="font-size:20px;"><span style="font-family:tahoma,geneva,sans-serif;"><span style="color:#696969;"><strong>40.37 TL</strong></span></span></span></p>
-
+              <a>CREALITY-3D-Yazıcı</a>
+			  <p><span style="font-size:20px;"><span style="font-family:tahoma,geneva,sans-serif;"><span style="color:#696969;"><strong>2.261 TL</strong></span></span></span></p>
             </div>
+			<div class=satinall>
+			<div class=satinallgenel>
+			<div class=satinall-satir>
+			<div class=azalt>
+			<a>-</a>
+			</div>
+			<div class=miktar>
+			</div>
+			<div class=arttir>
+			<a>+</a>
+			</div>
+			</div>
+			<div class=satinall-satir2>
+          <a href="#" data-name="CREALITY-3D-Yazıcı" data-price="2261" class="add-to-cart btn btn-primary">Sepete Ekle</a>
+			</div>
+			</div>
+			</div>
           </div>
 </div>
 <div class=urun>
 <div class="card-carousel--card"><img height="250" width="200" src="images/urun2.jpg"/>
             <div class="card-carousel--card--footer">
-              <a>Arduino UNO R3 (Klon)</a>
-			  <p><span style="font-size:20px;"><span style="font-family:tahoma,geneva,sans-serif;"><span style="color:#696969;"><strong>40.37 TL</strong></span></span></span></p>
+              <a>Arduino Başlangıç Seti</a>
+			  <p><span style="font-size:20px;"><span style="font-family:tahoma,geneva,sans-serif;"><span style="color:#696969;"><strong>170 TL</strong></span></span></span></p>
 
             </div>
+			<div class=satinall>
+			<div class=satinallgenel>
+			<div class=satinall-satir>
+			<div class=azalt>
+			<a>-</a>
+			</div>
+			<div class=miktar>
+			</div>
+			<div class=arttir>
+			<a>+</a>
+			</div>
+			</div>
+			<div class=satinall-satir2>
+          <a href="#" data-name="Arduino" data-price="170" class="add-to-cart btn btn-primary">Sepete Ekle</a>
+			</div>
+			</div>
+			</div>
           </div>
 </div>
 <div class=urun>
@@ -606,6 +779,23 @@
 			  <p><span style="font-size:20px;"><span style="font-family:tahoma,geneva,sans-serif;"><span style="color:#696969;"><strong>40.37 TL</strong></span></span></span></p>
 
             </div>
+			<div class=satinall>
+			<div class=satinallgenel>
+			<div class=satinall-satir>
+			<div class=azalt>
+			<a>-</a>
+			</div>
+			<div class=miktar>
+			</div>
+			<div class=arttir>
+			<a>+</a>
+			</div>
+			</div>
+			<div class=satinall-satir2>
+          <a href="#" data-name="Orange" data-price="0.5" class="add-to-cart btn btn-primary">Sepete Ekle</a>
+			</div>
+			</div>
+			</div>
           </div>
 </div>
 <div class=urun>
@@ -615,6 +805,23 @@
 			  <p><span style="font-size:20px;"><span style="font-family:tahoma,geneva,sans-serif;"><span style="color:#696969;"><strong>40.37 TL</strong></span></span></span></p>
 
             </div>
+			<div class=satinall>
+			<div class=satinallgenel>
+			<div class=satinall-satir>
+			<div class=azalt>
+			<a>-</a>
+			</div>
+			<div class=miktar>
+			</div>
+			<div class=arttir>
+			<a>+</a>
+			</div>
+			</div>
+			<div class=satinall-satir2>
+          <a href="#" data-name="Orange" data-price="0.5" class="add-to-cart btn btn-primary">Sepete Ekle</a>
+			</div>
+			</div>
+			</div>
           </div>
 </div>
 <div class=urun>
@@ -624,6 +831,23 @@
 			  <p><span style="font-size:20px;"><span style="font-family:tahoma,geneva,sans-serif;"><span style="color:#696969;"><strong>40.37 TL</strong></span></span></span></p>
 
             </div>
+			<div class=satinall>
+			<div class=satinallgenel>
+			<div class=satinall-satir>
+			<div class=azalt>
+			<a>-</a>
+			</div>
+			<div class=miktar>
+			</div>
+			<div class=arttir>
+			<a>+</a>
+			</div>
+			</div>
+			<div class=satinall-satir2>
+          <a href="#" data-name="Orange" data-price="0.5" class="add-to-cart btn btn-primary">Sepete Ekle</a>
+			</div>
+			</div>
+			</div>
           </div>
 </div>
 <div class=urun>
@@ -633,6 +857,23 @@
 			  <p><span style="font-size:20px;"><span style="font-family:tahoma,geneva,sans-serif;"><span style="color:#696969;"><strong>40.37 TL</strong></span></span></span></p>
 
             </div>
+			<div class=satinall>
+			<div class=satinallgenel>
+			<div class=satinall-satir>
+			<div class=azalt>
+			<a>-</a>
+			</div>
+			<div class=miktar>
+			</div>
+			<div class=arttir>
+			<a>+</a>
+			</div>
+			</div>
+			<div class=satinall-satir2>
+          <a href="#" data-name="Orange" data-price="0.5" class="add-to-cart btn btn-primary">Sepete Ekle</a>
+			</div>
+			</div>
+			</div>
           </div>
 </div>
 <div class=urun>
@@ -642,6 +883,23 @@
 			  <p><span style="font-size:20px;"><span style="font-family:tahoma,geneva,sans-serif;"><span style="color:#696969;"><strong>40.37 TL</strong></span></span></span></p>
 
             </div>
+			<div class=satinall>
+			<div class=satinallgenel>
+			<div class=satinall-satir>
+			<div class=azalt>
+			<a>-</a>
+			</div>
+			<div class=miktar>
+			</div>
+			<div class=arttir>
+			<a>+</a>
+			</div>
+			</div>
+			<div class=satinall-satir2>
+          <a href="#" data-name="Orange" data-price="0.5" class="add-to-cart btn btn-primary">Sepete Ekle</a>
+			</div>
+			</div>
+			</div>
           </div>
 </div>
 <div class=urun>
@@ -651,6 +909,23 @@
 			  <p><span style="font-size:20px;"><span style="font-family:tahoma,geneva,sans-serif;"><span style="color:#696969;"><strong>40.37 TL</strong></span></span></span></p>
 
             </div>
+			<div class=satinall>
+			<div class=satinallgenel>
+			<div class=satinall-satir>
+			<div class=azalt>
+			<a>-</a>
+			</div>
+			<div class=miktar>
+			</div>
+			<div class=arttir>
+			<a>+</a>
+			</div>
+			</div>
+			<div class=satinall-satir2>
+          <a href="#" data-name="Orange" data-price="0.5" class="add-to-cart btn btn-primary">Sepete Ekle</a>
+			</div>
+			</div>
+			</div>
           </div>
 </div>
 <div class=urun>
@@ -660,6 +935,23 @@
 			  <p><span style="font-size:20px;"><span style="font-family:tahoma,geneva,sans-serif;"><span style="color:#696969;"><strong>40.37 TL</strong></span></span></span></p>
 
             </div>
+			<div class=satinall>
+			<div class=satinallgenel>
+			<div class=satinall-satir>
+			<div class=azalt>
+			<a>-</a>
+			</div>
+			<div class=miktar>
+			</div>
+			<div class=arttir>
+			<a>+</a>
+			</div>
+			</div>
+			<div class=satinall-satir2>
+          <a href="#" data-name="Orange" data-price="0.5" class="add-to-cart btn btn-primary">Sepete Ekle</a>
+			</div>
+			</div>
+			</div>
           </div>
 </div>
 <div class=urun>
@@ -669,6 +961,23 @@
 			  <p><span style="font-size:20px;"><span style="font-family:tahoma,geneva,sans-serif;"><span style="color:#696969;"><strong>40.37 TL</strong></span></span></span></p>
 
             </div>
+			<div class=satinall>
+			<div class=satinallgenel>
+			<div class=satinall-satir>
+			<div class=azalt>
+			<a>-</a>
+			</div>
+			<div class=miktar>
+			</div>
+			<div class=arttir>
+			<a>+</a>
+			</div>
+			</div>
+			<div class=satinall-satir2>
+          <a href="#" data-name="Orange" data-price="0.5" class="add-to-cart btn btn-primary">Sepete Ekle</a>
+			</div>
+			</div>
+			</div>
           </div>
 </div>
 <div class=urun>
@@ -678,6 +987,23 @@
 			  <p><span style="font-size:20px;"><span style="font-family:tahoma,geneva,sans-serif;"><span style="color:#696969;"><strong>40.37 TL</strong></span></span></span></p>
 
             </div>
+			<div class=satinall>
+			<div class=satinallgenel>
+			<div class=satinall-satir>
+			<div class=azalt>
+			<a>-</a>
+			</div>
+			<div class=miktar>
+			</div>
+			<div class=arttir>
+			<a>+</a>
+			</div>
+			</div>
+			<div class=satinall-satir2>
+          <a href="#" data-name="Orange" data-price="0.5" class="add-to-cart btn btn-primary">Sepete Ekle</a>
+			</div>
+			</div>
+			</div>
           </div>
 </div>
 <div class=urun>
@@ -687,6 +1013,23 @@
 			  <p><span style="font-size:20px;"><span style="font-family:tahoma,geneva,sans-serif;"><span style="color:#696969;"><strong>40.37 TL</strong></span></span></span></p>
 
             </div>
+			<div class=satinall>
+			<div class=satinallgenel>
+			<div class=satinall-satir>
+			<div class=azalt>
+			<a>-</a>
+			</div>
+			<div class=miktar>
+			</div>
+			<div class=arttir>
+			<a>+</a>
+			</div>
+			</div>
+			<div class=satinall-satir2>
+          <a href="#" data-name="Orange" data-price="0.5" class="add-to-cart btn btn-primary">Sepete Ekle</a>
+			</div>
+			</div>
+			</div>
           </div>
 </div>
 <div class=urun>
@@ -696,6 +1039,23 @@
 			  <p><span style="font-size:20px;"><span style="font-family:tahoma,geneva,sans-serif;"><span style="color:#696969;"><strong>40.37 TL</strong></span></span></span></p>
 
             </div>
+			<div class=satinall>
+			<div class=satinallgenel>
+			<div class=satinall-satir>
+			<div class=azalt>
+			<a>-</a>
+			</div>
+			<div class=miktar>
+			</div>
+			<div class=arttir>
+			<a>+</a>
+			</div>
+			</div>
+			<div class=satinall-satir2>
+          <a href="#" data-name="Orange" data-price="0.5" class="add-to-cart btn btn-primary">Sepete Ekle</a>
+			</div>
+			</div>
+			</div>
           </div>
 </div>
 <div class=urun>
@@ -705,6 +1065,23 @@
 			  <p><span style="font-size:20px;"><span style="font-family:tahoma,geneva,sans-serif;"><span style="color:#696969;"><strong>40.37 TL</strong></span></span></span></p>
 
             </div>
+			<div class=satinall>
+			<div class=satinallgenel>
+			<div class=satinall-satir>
+			<div class=azalt>
+			<a>-</a>
+			</div>
+			<div class=miktar>
+			</div>
+			<div class=arttir>
+			<a>+</a>
+			</div>
+			</div>
+			<div class=satinall-satir2>
+          <a href="#" data-name="Orange" data-price="0.5" class="add-to-cart btn btn-primary">Sepete Ekle</a>
+			</div>
+			</div>
+			</div>
           </div>
 </div>
 <div class=urun>
@@ -714,6 +1091,23 @@
 			  <p><span style="font-size:20px;"><span style="font-family:tahoma,geneva,sans-serif;"><span style="color:#696969;"><strong>40.37 TL</strong></span></span></span></p>
 
             </div>
+			<div class=satinall>
+			<div class=satinallgenel>
+			<div class=satinall-satir>
+			<div class=azalt>
+			<a>-</a>
+			</div>
+			<div class=miktar>
+			</div>
+			<div class=arttir>
+			<a>+</a>
+			</div>
+			</div>
+			<div class=satinall-satir2>
+          <a href="#" data-name="Orange" data-price="0.5" class="add-to-cart btn btn-primary">Sepete Ekle</a>
+			</div>
+			</div>
+			</div>
           </div>
 </div>
 <div class=urun>
@@ -723,6 +1117,23 @@
 			  <p><span style="font-size:20px;"><span style="font-family:tahoma,geneva,sans-serif;"><span style="color:#696969;"><strong>40.37 TL</strong></span></span></span></p>
 
             </div>
+			<div class=satinall>
+			<div class=satinallgenel>
+			<div class=satinall-satir>
+			<div class=azalt>
+			<a>-</a>
+			</div>
+			<div class=miktar>
+			</div>
+			<div class=arttir>
+			<a>+</a>
+			</div>
+			</div>
+			<div class=satinall-satir2>
+          <a href="#" data-name="Orange" data-price="0.5" class="add-to-cart btn btn-primary">Sepete Ekle</a>
+			</div>
+			</div>
+			</div>
           </div>
 </div>
 <div class=urun>
@@ -732,6 +1143,23 @@
 			  <p><span style="font-size:20px;"><span style="font-family:tahoma,geneva,sans-serif;"><span style="color:#696969;"><strong>40.37 TL</strong></span></span></span></p>
 
             </div>
+			<div class=satinall>
+			<div class=satinallgenel>
+			<div class=satinall-satir>
+			<div class=azalt>
+			<a>-</a>
+			</div>
+			<div class=miktar>
+			</div>
+			<div class=arttir>
+			<a>+</a>
+			</div>
+			</div>
+			<div class=satinall-satir2>
+          <a href="#" data-name="Orange" data-price="0.5" class="add-to-cart btn btn-primary">Sepete Ekle</a>
+			</div>
+			</div>
+			</div>
           </div>
 </div>
 <div class=urun>
@@ -741,6 +1169,23 @@
 			  <p><span style="font-size:20px;"><span style="font-family:tahoma,geneva,sans-serif;"><span style="color:#696969;"><strong>40.37 TL</strong></span></span></span></p>
 
             </div>
+			<div class=satinall>
+			<div class=satinallgenel>
+			<div class=satinall-satir>
+			<div class=azalt>
+			<a>-</a>
+			</div>
+			<div class=miktar>
+			</div>
+			<div class=arttir>
+			<a>+</a>
+			</div>
+			</div>
+			<div class=satinall-satir2>
+          <a href="#" data-name="Orange" data-price="0.5" class="add-to-cart btn btn-primary">Sepete Ekle</a>
+			</div>
+			</div>
+			</div>
           </div>
 </div>
 <div class=urun>
@@ -750,6 +1195,23 @@
 			  <p><span style="font-size:20px;"><span style="font-family:tahoma,geneva,sans-serif;"><span style="color:#696969;"><strong>40.37 TL</strong></span></span></span></p>
 
             </div>
+			<div class=satinall>
+			<div class=satinallgenel>
+			<div class=satinall-satir>
+			<div class=azalt>
+			<a>-</a>
+			</div>
+			<div class=miktar>
+			</div>
+			<div class=arttir>
+			<a>+</a>
+			</div>
+			</div>
+			<div class=satinall-satir2>
+          <a href="#" data-name="Orange" data-price="0.5" class="add-to-cart btn btn-primary">Sepete Ekle</a>
+			</div>
+			</div>
+			</div>
           </div>
 </div>
 <div class=urun>
@@ -759,6 +1221,23 @@
 			  <p><span style="font-size:20px;"><span style="font-family:tahoma,geneva,sans-serif;"><span style="color:#696969;"><strong>40.37 TL</strong></span></span></span></p>
 
             </div>
+			<div class=satinall>
+			<div class=satinallgenel>
+			<div class=satinall-satir>
+			<div class=azalt>
+			<a>-</a>
+			</div>
+			<div class=miktar>
+			</div>
+			<div class=arttir>
+			<a>+</a>
+			</div>
+			</div>
+			<div class=satinall-satir2>
+          <a href="#" data-name="Orange" data-price="0.5" class="add-to-cart btn btn-primary">Sepete Ekle</a>
+			</div>
+			</div>
+			</div>
           </div>
 </div>
 
@@ -977,15 +1456,305 @@
 		<div class="row" style="margin: 0px -10px; padding: 0px; border: 0px; font: inherit; vertical-align: baseline; clear: both;">
 			<a class="col col-6" href="https://www.robotistan.com/deloitte-fast-50.shtm" style="margin: 0px; padding: 0px 10px; border: 0px; font: inherit; vertical-align: baseline; text-decoration-line: none; cursor: pointer; transition-timing-function: ease-in-out; transition-duration: 0.2s; float: left; box-sizing: border-box; width: 209.988px;"><img alt="technology fast 50 2016 turkey" src="https://www.robotistan.com/Data/EditorFiles/fast.jpg" style="margin: 0px; padding: 0px; border: 0px; font: inherit; vertical-align: baseline; max-width: 100%; height: auto;" /></a><a class="col col-6" href="https://www.robotistan.com/deloitte-fast-50.shtm" style="margin: 0px; padding: 0px 10px; border: 0px; font: inherit; vertical-align: baseline; text-decoration-line: none; cursor: pointer; transition-timing-function: ease-in-out; transition-duration: 0.2s; float: left; box-sizing: border-box; width: 209.988px;"><img alt="technology fast 500 2016 emea" src="https://www.robotistan.com/Data/EditorFiles/fast2.jpg" style="margin: 0px; padding: 0px; border: 0px; font: inherit; vertical-align: baseline; max-width: 100%; height: auto;" /></a></div>
 	</div>
+	
 </div>
 
 </div>
+<div class="modal fade" id="cart" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Sepet</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <table class="show-cart table">
+
+        </table>
+        <div>Toplam Tutar: ₺<span class="total-cart"></span></div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Kapat</button>
+        <button onclick="window.location.href='cart.html'" type="button" href="cart.html" class="btn btn-primary">Satın Al</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- template for the modal component -->
+<script type="text/x-template" id="modal-template">
+  <transition name="modal">
+    <div class="modal-mask">
+      <div class="modal-wrapper">
+        <div class="modal-container">
+
+          <div class="modal-header">
+             <button class="modal-default-button" @click="$emit('close')">
+                KAPAT
+              </button>
+          </div>
+
+          <div class="modal-body">
+           Üye Giriş Bilgilerinizi Giriniz.
+		   <div class=uyemail>
+		   <img src="images/uyemail.png" class="uyemailicon" height="50" width="50"></img>
+		   <input type="text" name="ara" class="uyemaildoldur" id="AKutu"/>
+		   
+		   </div>
+		   
+		   <div class=uyesifre>
+		   <img src="images/uyemail.png" class="uyemailicon" height="50" width="50"></img>
+		   <input type="password" name="ara" class="uyemaildoldur" id="AKutu"/>
+		   </div>
+		   <a href="#" class="uyegirisyap">Giriş Yap</a>
+		   <input type="checkbox" class="benihatirla" name="bh" value="BeniHatirla">Beni Hatırla<br>
+            <div class=uyealtyazi>
+			<a href="#"><p><span style="font-size:14px;">Şifremi Unuttum</span></p></a>
+			</div>
+			<div class=uyealtyazi>
+			<a href="#"><p><span style="font-size:14px;">Üye Ol</span></p></a>
+			</div>
+          </div>
+
+          <div class="modal-footer">
+            <div class=socialgiris>
+			<img src="images/facebook.png" class="socialft" height="50" width="50"></img>
+			<div class=socialyazi>
+			<a href="#"><p><span style="font-size:14px;">Facebook İle Giriş</span></p></a>
+			</div>
+			</div>
+			<div class=socialgiris>
+			<img src="images/twitter.png" class="socialft" height="50" width="50"></img>
+			<div class=socialyazi>
+			<a href="#"><p><span style="font-size:14px;">Twitter İle Giriş</span></p></a>
+			</div>
+			</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </transition>
+</script>
+
 
 </div>
 
 
 
+<script>
+// ************************************************
+// Shopping Cart API
+// ************************************************
 
+var shoppingCart = (function() {
+  // =============================
+  // Private methods and propeties
+  // =============================
+  cart = [];
+  
+  // Constructor
+  function Item(name, price, count) {
+    this.name = name;
+    this.price = price;
+    this.count = count;
+  }
+  
+  // Save cart
+  function saveCart() {
+    sessionStorage.setItem('shoppingCart', JSON.stringify(cart));
+  }
+  
+    // Load cart
+  function loadCart() {
+    cart = JSON.parse(sessionStorage.getItem('shoppingCart'));
+  }
+  if (sessionStorage.getItem("shoppingCart") != null) {
+    loadCart();
+  }
+  
+
+  // =============================
+  // Public methods and propeties
+  // =============================
+  var obj = {};
+  
+  // Add to cart
+  obj.addItemToCart = function(name, price, count) {
+    for(var item in cart) {
+      if(cart[item].name === name) {
+        cart[item].count ++;
+        saveCart();
+        return;
+      }
+    }
+    var item = new Item(name, price, count);
+    cart.push(item);
+    saveCart();
+  }
+  // Set count from item
+  obj.setCountForItem = function(name, count) {
+    for(var i in cart) {
+      if (cart[i].name === name) {
+        cart[i].count = count;
+        break;
+      }
+    }
+  };
+  // Remove item from cart
+  obj.removeItemFromCart = function(name) {
+      for(var item in cart) {
+        if(cart[item].name === name) {
+          cart[item].count --;
+          if(cart[item].count === 0) {
+            cart.splice(item, 1);
+          }
+          break;
+        }
+    }
+    saveCart();
+  }
+
+  // Remove all items from cart
+  obj.removeItemFromCartAll = function(name) {
+    for(var item in cart) {
+      if(cart[item].name === name) {
+        cart.splice(item, 1);
+        break;
+      }
+    }
+    saveCart();
+  }
+
+  // Clear cart
+  obj.clearCart = function() {
+    cart = [];
+    saveCart();
+  }
+
+  // Count cart 
+  obj.totalCount = function() {
+    var totalCount = 0;
+    for(var item in cart) {
+      totalCount += cart[item].count;
+    }
+    return totalCount;
+  }
+
+  // Total cart
+  obj.totalCart = function() {
+    var totalCart = 0;
+    for(var item in cart) {
+      totalCart += cart[item].price * cart[item].count;
+    }
+    return Number(totalCart.toFixed(2));
+  }
+
+  // List cart
+  obj.listCart = function() {
+    var cartCopy = [];
+    for(i in cart) {
+      item = cart[i];
+      itemCopy = {};
+      for(p in item) {
+        itemCopy[p] = item[p];
+
+      }
+      itemCopy.total = Number(item.price * item.count).toFixed(2);
+      cartCopy.push(itemCopy)
+    }
+    return cartCopy;
+  }
+
+  // cart : Array
+  // Item : Object/Class
+  // addItemToCart : Function
+  // removeItemFromCart : Function
+  // removeItemFromCartAll : Function
+  // clearCart : Function
+  // countCart : Function
+  // totalCart : Function
+  // listCart : Function
+  // saveCart : Function
+  // loadCart : Function
+  return obj;
+})();
+
+
+// *****************************************
+// Triggers / Events
+// ***************************************** 
+// Add item
+$('.add-to-cart').click(function(event) {
+  event.preventDefault();
+  var name = $(this).data('name');
+  var price = Number($(this).data('price'));
+  shoppingCart.addItemToCart(name, price, 1);
+  displayCart();
+});
+
+// Clear items
+$('.clear-cart').click(function() {
+  shoppingCart.clearCart();
+  displayCart();
+});
+
+
+function displayCart() {
+  var cartArray = shoppingCart.listCart();
+  var output = "";
+  for(var i in cartArray) {
+    output += "<tr>"
+      + "<td>" + cartArray[i].name + "</td>" 
+      + "<td>(" + cartArray[i].price + ")</td>"
+      + "<td><div class='input-group'><button class='minus-item input-group-addon btn btn-primary' data-name=" + cartArray[i].name + ">-</button>"
+      + "<input type='number' class='item-count form-control' data-name='" + cartArray[i].name + "' value='" + cartArray[i].count + "'>"
+      + "<button class='plus-item btn btn-primary input-group-addon' data-name=" + cartArray[i].name + ">+</button></div></td>"
+      + "<td><button class='delete-item btn btn-danger' data-name=" + cartArray[i].name + ">X</button></td>"
+      + " = " 
+      + "<td>" + cartArray[i].total + "</td>" 
+      +  "</tr>";
+  }
+  $('.show-cart').html(output);
+  $('.total-cart').html(shoppingCart.totalCart());
+  $('.total-count').html(shoppingCart.totalCount());
+}
+
+// Delete item button
+
+$('.show-cart').on("click", ".delete-item", function(event) {
+  var name = $(this).data('name')
+  shoppingCart.removeItemFromCartAll(name);
+  displayCart();
+})
+
+
+// -1
+$('.show-cart').on("click", ".minus-item", function(event) {
+  var name = $(this).data('name')
+  shoppingCart.removeItemFromCart(name);
+  displayCart();
+})
+// +1
+$('.show-cart').on("click", ".plus-item", function(event) {
+  var name = $(this).data('name')
+  shoppingCart.addItemToCart(name);
+  displayCart();
+})
+
+// Item count input
+$('.show-cart').on("change", ".item-count", function(event) {
+   var name = $(this).data('name');
+   var count = Number($(this).val());
+  shoppingCart.setCountForItem(name, count);
+  displayCart();
+});
+
+displayCart();
+
+</script>
 
 
 
@@ -1030,7 +1799,10 @@ window.onclick = function(event) {
 
 
 
+
 </script>
+
+ <script src="popup.js"></script>
  <script src="index.js"></script>
  <script src="index1.js"></script>
   <script src="index2.js"></script>

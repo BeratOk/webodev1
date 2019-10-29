@@ -14,6 +14,65 @@ body{
 	
 }
 
+.sepeticerik{
+	width:1230px;
+	margin-left:120px;
+	margin-top:20px;
+	
+	
+}
+
+.sepet{
+	float:left;
+	margin-left:30px;
+	margin-top:10px;
+}
+
+.sepeturunadi{
+	margin-top:20px;
+    width:150px;
+	border-right:solid;
+	border-right-width:1px;
+	float:left;
+}
+
+.sepetbirimfiyat{
+	margin-top:20px;
+    width:130px;
+	border-right:solid;
+	border-right-width:1px;
+	float:left;
+	padding-left:8px;
+}
+
+.sepeturunmiktar{
+	margin-top:20px;
+    width:670px;
+	border-right:solid;
+	border-right-width:1px;
+	float:left;
+	padding-left:30px;
+}
+
+.sepetsil{
+    margin-top:20px;
+    width:70px;
+	border-right:solid;
+	border-right-width:1px;
+	float:left;
+	padding-left:8px;
+	
+}
+
+.sepettoplamuruntutar{
+margin-top:20px;
+    width:200px;
+	
+	float:left;
+	padding-left:8px;
+}
+
+
 #ilksira{
 	height:75px;
 	position:fixed;
@@ -34,7 +93,17 @@ body{
 	
 }
 
-
+.show-cart li {
+  display: flex;
+}
+.card {
+  margin-bottom: 20px;
+}
+.card-img-top {
+  width: 200px;
+  height: 200px;
+  align-self: center;
+}
 
 .menu{
 	float:left;
@@ -176,6 +245,30 @@ float:left;
 .show {display:block;}
 
 
+
+.urunyokic{
+	height:200px;
+	margin-left:500px;
+	margin-top:200px;
+}
+.sepetbutonlar{
+	margin-right:500px;
+	float:left;
+}
+.sepetbuton{
+	background:red;
+	float:left;
+	
+	width:150px;
+	margin-left:2px;
+}
+.urunvar{
+	margin-top:100px;
+	position:absolute;
+	z-index:2;
+	
+}
+
 .kategoributondrop {
   background-color: #095279;
   color: white;
@@ -293,7 +386,18 @@ float:left;
 
 * {box-sizing:border-box}
 
+.indirim{
 
+height:70px;
+width:900px;
+}
+.indirimsatir1{
+	
+	height:10px;
+	margin-left:30px;
+	margin-top:20px;
+	
+}
 
 .card-carousel-wrapper {
   display: flex;
@@ -347,6 +451,7 @@ float:left;
   display: flex;
   transition: transform 150ms ease-out;
   transform: translatex(0px);
+  
 }
 .card-carousel-cards .card-carousel--card {
   margin: 0 10px;
@@ -356,7 +461,61 @@ float:left;
   border-radius: 4px;
   z-index: 3;
   margin-bottom: 2px;
+  
+  
+  
 }
+
+
+
+.urunitem{
+	position:absolute;
+	z-index:1;
+	height: 100%
+	
+}
+.satinal{
+	position:absolute;
+	
+	z-index:2;
+	height:300px;
+	width:200px;
+	margin-top:-270px;
+	opacity:0;
+}
+
+.satinall{
+	position:absolute;
+	
+	z-index:2;
+	height:300px;
+	width:200px;
+	margin-top:-350px;
+	opacity:0;
+	
+	
+}
+
+.azalt a{
+	margin-left:15px;
+	padding-top:30px;
+	font-size:30px;
+}
+
+.arttir a{
+	margin-left:20px;
+	font-size:30px;
+	padding-top:30px;
+}
+
+.satinal:hover {
+	opacity:1;
+}
+
+.satinall:hover {
+	opacity:1;
+}
+
 .card-carousel-cards .card-carousel--card:first-child {
   margin-left: 0;
 }
@@ -381,14 +540,14 @@ float:left;
   padding: 3px 0;
   margin: 0;
   margin-bottom: 2px;
-  font-size: 19px;
-  font-weight: 500;
+  font-size: 10px;
+  font-weight: 50;
   color: #2c3e50;
   user-select: none;
 }
 .card-carousel-cards .card-carousel--card--footer p:nth-of-type(2) {
   font-size: 12px;
-  font-weight: 300;
+  font-weight: 50;
   padding: 6px;
   background: rgba(40, 44, 53, 0.06);
   display: inline-block;
@@ -429,11 +588,242 @@ h1 {
   color: #42b883;
 }
 
+.satinalgenel{
+	margin-top:230px;
+	background:white;
+}
+
+.satinallgenel{
+	margin-top:215px;
+	background:white;
+}
+
+.satinall-satir{
+	height:50px;
+	width:200px;
+	margin-left:20px;
+	
+}
+
+.satinal-satir{
+	height:50px;
+	width:200px;
+	
+}
+
+.satinal-satir2{
+	height:50px;
+	margin-left:40px;
+	margin-top:20px;
+	
+	
+	
+}
+
+
+.satinall-satir2{
+	height:50px;
+	margin-left:60px;
+	margin-top:20px;
+	
+	
+	
+}
+
+.abonedoldur1{
+	margin-left:80px;
+	margin-top:23px;
+	height:70px;
+	width:220px;
+	float:left;
+	
+}
+
+.abonedoldur2{
+	margin-left:20px;
+	margin-top:23px;
+	height:70px;
+	width:400px;
+	float:left;
+	
+}
+
+.ebultenbuton {
+	background-color:red;
+	
+	display:inline-block;
+	
+	color:white;
+	font-family:Trebuchet MS;
+	font-size:15px;
+	font-weight:bold;
+	padding:22px 28px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #b23e35;
+	float:left;
+	margin-left:20px;
+	margin-top:23px;
+}
+.ebultenbuton:hover {
+	background-color:red;
+	text-decoration:none;
+}
+
+
+
+.azalt{
+	background:grey;
+	height:50px;
+	width:50px;
+	float:left;
+	margin-left:8px;
+}
+
+
+.sepetguncelle {
+	background-color:red;
+	border:1px solid #ffffff;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Trebuchet MS;
+	font-size:15px;
+	padding:6px 27px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #b23e35;
+	float:left;
+}
+.sepetguncelle:hover {
+	background-color:#eb675e;
+	text-decoration:none;
+}
+.sepetguncelle:active {
+	position:relative;
+	top:1px;
+}
+
+.alisverisdevam {
+	background-color:red;
+	border:1px solid #ffffff;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Trebuchet MS;
+	font-size:15px;
+	padding:6px 27px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #b23e35;
+	float:left;
+}
+.alisverisdevam:hover {
+	background-color:#eb675e;
+	text-decoration:none;
+}
+.alisverisdevam:active {
+	position:relative;
+	top:1px;
+}
+
+.alisverislisteekle {
+	background-color:red;
+	border:1px solid #ffffff;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Trebuchet MS;
+	font-size:15px;
+	padding:6px 27px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #b23e35;
+	float:left;
+}
+.alisverislisteekle:hover {
+	background-color:#eb675e;
+	text-decoration:none;
+}
+.alisverislisteekle:active {
+	position:relative;
+	top:1px;
+}
+
+
+.sepettemizle {
+	background-color:red;
+	border:1px solid #ffffff;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Trebuchet MS;
+	font-size:15px;
+	padding:6px 27px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #b23e35;
+	float:left;
+}
+.sepettemizle:hover {
+	background-color:#eb675e;
+    text-decoration:none;
+}
+.sepettemizle:active {
+	position:relative;
+	top:1px;
+}
+        
+
+.arttir{
+	background:grey;
+	height:50px;
+	width:50px;
+	float:left;
+	margin-left:5px;
+}
+
+.miktar{
+	height:50px;
+	width:75px;
+	float:left;
+	background:grey;
+	margin-left:5px;
+}
+
 .aramayazi{
 	width:700px;
 	height:50px;
-}
 	
+}
+
+.indirimgiris{
+	
+	width:500px;
+	height:45px;
+	float:left;
+	margin-left:20px;
+	
+}
+
+.indirimbuton {
+	
+	background-color:red;
+	border-radius:9px;
+	
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Verdana;
+	font-size:12px;
+	padding:13px 150px;
+	text-decoration:none;
+    margin-left:10px;
+	float:left;
+}
+.indirimbuton:hover {
+	background-color:#eb675e;
+}
+.indirimbuton:active {
+	position:relative;
+	top:1px;
+}
+
 .uckisim{
 width:900px;
 margin-left:450px;
@@ -454,6 +844,19 @@ background:white;
 	
 	
 }
+
+.secilenler{
+	height:420px;
+    width:1230px;
+	margin-left:120px;
+	margin-top:40px;
+	border-style:solid;
+	border-width:0.5px;
+	border-color:grey;
+	border-radius:8px;
+	
+}
+
 
 .uckisim li{
 	float:left;
@@ -476,10 +879,35 @@ background:white;
 	
 }
 
+
+.abonelik{
+	
+	height:120px;
+	width:100%;
+	background:#095279;
+	margin-top:30px;
+	
+}
+
 .menuyani{
 	margin-top:20px;
 	float:left;
 	margin-left:30px;
+}
+
+
+.abonelikresim{
+	margin-left:120px;
+	margin-top:10px;
+	float:left;
+}
+
+.abonelikyazi{
+	margin-left:40px;
+	margin-top:35px;
+	float:left;
+	font-size:12px;
+	line-height:5px;
 }
 
 
@@ -535,6 +963,8 @@ background:white;
   width: 860px;
   height:350px;
 }
+
+
 .card-ccarousel--overflow-container {
   overflow: hidden;
 }
@@ -605,7 +1035,7 @@ background:white;
   padding: 3px 0;
   margin: 0;
   margin-bottom: 2px;
-  font-size: 19px;
+  font-size: 5px;
   font-weight: 500;
   color: #2c3e50;
   user-select: none;
@@ -737,4 +1167,306 @@ background:white
 	float:left;
 }
 
+
+
+.card-kcarousel {
+  display: flex;
+  justify-content: center;
+  width: 1100px;
+  height:350px;
+}
+
+
+.card-kcarousel--overflow-container {
+  overflow: hidden;
+}
+.card-kcarousel--nav__left, .card-carousel--nav__right {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  padding: 10px;
+  box-sizing: border-box;
+  border-top: 2px solid #42b883;
+  border-right: 2px solid #42b883;
+  cursor: pointer;
+  margin: 0 10px;
+  transition: transform 150ms linear;
+}
+.card-kcarousel--nav__left[disabled], .card-carousel--nav__right[disabled] {
+  opacity: 0.2;
+  border-color: black;
+}
+.card-kcarousel--nav__left {
+  transform: rotate(-135deg);
+}
+.card-kcarousel--nav__left:active {
+  transform: rotate(-135deg) scale(0.9);
+}
+.card-kcarousel--nav__right {
+  transform: rotate(45deg);
+}
+.card-kcarousel--nav__right:active {
+  transform: rotate(45deg) scale(0.9);
+}
+
+.card-kcarousel-cards {
+  display: flex;
+  transition: transform 150ms ease-out;
+  transform: translatex(0px);
+}
+.card-kcarousel-cards .card-ccarousel--card {
+  margin: 0 10px;
+  cursor: pointer;
+  box-shadow: 0 4px 15px 0 rgba(40, 44, 53, 0.06), 0 2px 2px 0 rgba(40, 44, 53, 0.08);
+  background-color: #fff;
+  border-radius: 4px;
+  z-index: 3;
+  margin-bottom: 2px;
+}
+.card-kcarousel-cards .card-kcarousel--card:first-child {
+  margin-left: 0;
+}
+.card-kcarousel-cards .card-kcarousel--card:last-child {
+  margin-right: 0;
+}
+.card-kcarousel-cards .card-kcarousel--card img {
+  vertical-align: bottom;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  transition: opacity 150ms linear;
+  user-select: none;
+}
+.card-kcarousel-cards .card-kcarousel--card img:hover {
+  opacity: 1;
+}
+.card-kcarousel-cards .card-kcarousel--card--footer {
+  border-top: 0;
+  padding: 7px 15px;
+}
+.card-kcarousel-cards .card-kcarousel--card--footer p {
+  padding: 3px 0;
+  margin: 0;
+  margin-bottom: 2px;
+  font-size: 5px;
+  font-weight: 500;
+  color: #2c3e50;
+  user-select: none;
+}
+.card-kcarousel-cards .card-kcarousel--card--footer p:nth-of-type(2) {
+  font-size: 12px;
+  font-weight: 300;
+  padding: 6px;
+  background: rgba(40, 44, 53, 0.06);
+  display: inline-block;
+  position: relative;
+  margin-left: 4px;
+  color: #666a73;
+}
+.card-kcarousel-cards .card-kcarousel--card--footer p:nth-of-type(2):before {
+  content: "";
+  float: left;
+  position: absolute;
+  top: 0;
+  left: -12px;
+  width: 0;
+  height: 0;
+  border-color: transparent rgba(40, 44, 53, 0.06) transparent transparent;
+  border-style: solid;
+  border-width: 12px 12px 12px 0;
+}
+.card-kcarousel-cards .card-kcarousel--card--footer p:nth-of-type(2):after {
+  content: "";
+  position: absolute;
+  top: 10px;
+  left: -1px;
+  float: left;
+  width: 4px;
+  height: 4px;
+  border-radius: 2px;
+  background: white;
+  box-shadow: -0px -0px 0px #004977;
+}
+
+
+
+
+
+
+
+
+
+
+
+.modal-mask {
+  position: fixed;
+  z-index: 9998;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, .5);
+  display: table;
+  transition: opacity .3s ease;
+}
+
+.modal-wrapper {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.modal-container {
+  width: 500px;
+  margin: 0px auto;
+  padding: 20px 30px;
+  background-color: #fff;
+  border-radius: 2px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, .33);
+  transition: all .3s ease;
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+.modal-header h3 {
+  margin-top: 0;
+  color: #42b983;
+}
+
+.modal-body {
+  margin: 20px 0;
+}
+
+.modal-default-button {
+  margin-left:350px;
+}
+
+/*
+ * The following styles are auto-applied to elements with
+ * transition="modal" when their visibility is toggled
+ * by Vue.js.
+ *
+ * You can easily play with the modal transition by editing
+ * these styles.
+ */
+
+.modal-enter {
+  opacity: 0;
+}
+
+.modal-leave-active {
+  opacity: 0;
+}
+
+.modal-enter .modal-container,
+.modal-leave-active .modal-container {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
 	
+	
+	
+.uyelikbuton{
+	height:50px;
+	width:50px;
+    border-style:none;
+	background:none;
+	margin-left:-20px;
+	pointer:progress;
+}
+
+.uyelikbuton:hover{
+	cursor:pointer;
+}
+
+
+
+.uyemail{
+	
+	width:430px;
+	background:red;
+	height:50px;
+	margin-left:-10px;
+	margin-top:20px;
+	
+	
+}
+
+.uyesifre{
+	
+	width:430px;
+	background:red;
+	height:50px;
+	margin-top:30px;
+	margin-left:-10px;
+	
+}
+
+.uyemailicon{
+	float:left;
+}
+
+.uyemaildoldur{
+	
+	height:50px;
+	width:380px;
+	
+}
+
+
+.uyegirisyap {
+	background:linear-gradient(to bottom, #f71000 5%, #ff0d00 100%);
+	background-color:#f71000;
+	border:1px solid #ffffff;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Trebuchet MS;
+	font-size:18px;
+	font-weight:bold;
+	padding:8px 175px;
+	text-decoration:none;
+	margin-top:20px;
+	margin-left:-10px;
+	width:430px;
+	height:50px;
+	
+}
+.uyegirisyap:hover {
+	background:linear-gradient(to bottom, #ff0d00 5%, #f71000 100%);
+	background-color:#ff0d00;
+	text-decoration:none;
+}
+.uyegirisyap:active {
+	position:relative;
+	top:1px;
+}
+
+.benihatirla{
+	margin-top:20px;
+}
+
+.socialgiris{
+	float:left;
+	margin-left:5px;
+	border-style:solid;
+	border-width:1px;
+	width:250px;
+}
+
+.socialft{
+	float:left;
+}
+
+.socialyazi{
+	margin-top:10px;
+	padding-left:20px;
+}
+
+.socialyazi a{
+	
+	display:inline-block;
+	
+}
+	
+	
+.uyealtyazi{
+	margin-left:300px;
+}
