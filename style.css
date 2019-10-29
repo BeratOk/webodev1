@@ -906,7 +906,7 @@ background:white;
 
 
 .abonelik{
-	
+	float:left;
 	height:120px;
 	width:100%;
 	background:#095279;
@@ -1234,7 +1234,7 @@ background:white
 	background:white;
 	margin-left:100px;
 	float:left;
-	margin-top:-30px;
+	margin-top:-240px;
 }
 
 .footer{
@@ -1645,4 +1645,42 @@ border-right:solid;
 	float:left;
 	margin-left:5px;
 	margin-top:2px;
+}
+
+.alttakibutonlar{
+	float:left;
+	height:100px;
+	width:700px;
+	margin-left:30px;
+	margin-top:20px;
+}
+
+.altbuton1 {
+	background-color:transparent;
+	border-radius:4px;
+	border:2px solid #eb200e;
+	display:inline-block;
+	cursor:pointer;
+	color:#000000;
+	font-family:Arial;
+	font-size:12px;
+	padding:10px;
+	text-decoration:none;
+	width:200px;
+}
+.altbuton1:hover {
+	background-color:transparent;
+}
+.altbuton1:active {
+	position:relative;
+	top:1px;
+}
+
+.altbuton1div{
+	float:left;
+	margin-left:20px;
+}
+
+.altbutonicon{
+	margin-right:10px;
 }
