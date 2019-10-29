@@ -44,18 +44,18 @@
 <div id="ilksira">
 <div class="logo">
 
-<a href="index.html"><img src="images/logo.png" width="320″ height=”72″ alt=""></a>
+<a href="#"><img src="images/logo.png" width="320″ height=”72″ alt=""></a>
 
 </div>
 
 <div class="menu">
 <ul>
-   <li> <a href="index-2.html">YENİ ÜRÜNLER</span></a>
-   <li> <a href="index-2.html">FIRSAT ÜRÜNLERİ</span></a>
-   <li> <a href="index-2.html">ÇOCUKLAR İÇİN</span></a>
-   <li> <a href="index-2.html">KAMPANYALAR</span></a>
-   <li> <a href="index-2.html">MAKEBLOCK</span></a>
-   <li> <a href="index-2.html">OUTLET</span></a>
+   <li> <a href="index.html">YENİ ÜRÜNLER</span></a>
+   <li> <a href="index.html">FIRSAT ÜRÜNLERİ</span></a>
+   <li> <a href="index.html">ÇOCUKLAR İÇİN</span></a>
+   <li> <a href="index.html">KAMPANYALAR</span></a>
+   <li> <a href="index.html">MAKEBLOCK</span></a>
+   <li> <a href="index.html">OUTLET</span></a>
    
 </ul>
 </div>
@@ -63,14 +63,14 @@
 <div class="menuyani">
 <div class=robo>
 <div id="app7">
-  <button id="show-modal" class="uyelikbuton" @click="showModal = true"><img height="50" width="60" src="images/robo.png" /></button>
+  <button id="show-modal"  class="uyelikbuton" @click="showModal = true"><img width="60" height="50" src="images/robo.png" /></button>
   <!-- use the modal component, pass in the prop -->
   <modal v-if="showModal" @close="showModal = false">
     <!--
       you can use custom content here to overwrite
       default content
     -->
-    <h3 slot="header">custom header</h3>
+    
   </modal>
 </div>
 </div>
@@ -89,7 +89,8 @@
 <div class="kategoributon">
   <button onclick="tumkategoriler()" class="kategoributondrop">TÜM KATEGORİLER</button>
   <div id="kategoridrop" class="kategori-dropdown">
-    <div class=menuitem>
+    
+	<div class=menuitem>
 	<div class=menuicon>
 	<img src="images/arduino.png" width="50" height="42" alt="">
 	</div>
@@ -243,27 +244,79 @@
 <div id="aramakutusu">
 	<form action="" method="get">
 		<input type="text" name="ara" class="aramayazi" placeholder="Aramak istediğiniz şeyi yazın .. "id= AKutu"/>
-<div class="dropdown">
-  <button onclick="myFunction()" class="dropbtn">Tüm Kategoriler</button>
-  <div id="myDropdown" class="dropdown-content">
-    
-  </div>
-</div>
-	  	<input type="submit" value="Ara" id="AButon"/>
+<div class="aramadropdown">
+  
+   <select class=kategoriselect>
+  <option value="tumkategoriler">Tüm Kategoriler</option>
+  <option value="arduino">Arduino</option>
+  <option value="rasperrypi">Raspberry Pi</option>
+  <option value="egiticiset">Eğitici Setler</option>
+  <option value="3d">3D</option>
+  <option value="gelistirmekart">Geliştirme Kartı</option>
+  
+    </select>
+
+	 
     </div>
-	
+	 	<input type="submit" value="Ara" id="AButon"/>
 	</form>
 </div> <!-- #aramakutusu -->
 
 <div class="uckisim">
 
 <ul>
-   <li> <a href="index-2.html">Müşteri Yorumları</span></a>
-   <li> <a href="index-2.html">Videolar</span></a>
-   <li> <a href="index-2.html">Blog</span></a>
-   <li> <a href="index-2.html">Ücretsiz Kargo</span></a>
-   <li> <a href="index-2.html">Kargo Takip</span></a>
-   <li> <a href="index-2.html">Yardım</span></a>
+<div class=musteriyorum>
+   <img height="20" width="20" class="musteridialog" src="images/musteridialog.png"></img>
+   <li> <a href="index.html">Müşteri Yorumları</span></a>
+   <img height="20" width="60" class="musteriyildiz" src="images/musteriyildiz.png"></img>
+   </div>
+   <div class=menuvideo>
+   <img height="20" width="20" class="videoicon" src="images/videoicon.png"></img>
+      <li> <a href="index.html">Videolar</span></a>
+   </div>
+     <div class=menublog>
+	 <img height="20" width="20" class="blogicon" src="images/blogicon.png"></img>
+	 <li> <a href="index.html">Blog</span></a>
+   </div>
+     <div class=uckisimdiger>
+	 <li> <a href="index.html">Ücretsiz Kargo</span></a>
+   </div>
+     <div class=uckisimdiger>
+	 <li> <a href="index.html">Kargo Takip</span></a>
+   </div>
+      <div class=uckisimdiger>
+   <li> <a href="index.html">Yardım</span></a>
+   </div>
+   <div class=dilsecim>
+   <img height="20" width="20" class="dilicon" src="images/tricon.png"></img>
+   <select class=dilsecimselect>
+   
+    <option value="tumkategoriler">Türkçe</option>
+    <option value="arduino">İngilizce</option>
+  
+  
+    </select>
+   
+   </div>
+   
+   <div class=parasecim>
+   
+   <img height="20" width="20" class="dilicon" src="images/paraicon.png"></img>
+   <select class=dilsecimselect>
+   
+    <option value="tumkategoriler">TL</option>
+    <option value="arduino">EURO</option>
+	 <option value="arduino">DOLAR</option>
+  
+  
+    </select>
+   
+   </div>
+
+   
+   
+   
+
    
 </ul>
 
@@ -272,7 +325,7 @@
 </div>
 
 </div>
-
+</div>
 
 
 
