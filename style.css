@@ -1,16 +1,16 @@
 element.style {
 }
 
-body{
-	background:#f7f7f7;
-	margin:0px;
-	
+html{
+	background:#ebebeb;
 }
+
+
 
 #header{
 	background:white;
 	
-	height:240px;
+	height:210px;
 	
 }
 
@@ -315,6 +315,8 @@ float:left;
 
 /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
 .show {display:block;}
+
+
 
 
 
@@ -789,6 +791,23 @@ h1 {
 .aramayazi{
 	width:700px;
 	height:50px;
+	margin-left:30px;
+	border-style:none;
+	font-size:12px;
+	
+}
+
+.musteridialog{
+	float:left;
+	margin-top:10px;
+	margin-right:3px;
+	
+}
+
+.musteriyildiz{
+	float:left;
+	margin-top:10px;
+
 	
 }
 
@@ -857,25 +876,28 @@ background:white;
 	
 }
 
-
-.uckisim li{
+.uckisimdiger{
+	margin-left:15px;
+	width:80px;
+	border-right:solid;
+	border-color:grey;
+	border-width:0.09ex;
 	float:left;
-	margin-right:25px;
-	 border-right:solid 1px;
-	     height:35px;
-
 }
 
-.uckisim li a{
-	
-	display: block;
-    text-decoration:none; 
-	color: #777777;
-	font-size: 11px;
-    margin-top:10px;
-	width:100px;
-	
-   
+.musteriyorum{
+	float:left;
+	width:180px;
+	border-right:solid;
+	border-color:grey;
+	border-width:0.09ex;
+}
+
+
+.uckisim li a {
+	font-size:10px;
+	float:left;
+	margin-top:13px;
 	
 }
 
@@ -945,6 +967,7 @@ background:white;
 	width:950px;
 	height:380px;
 	background:white;
+	margin-top:10px;
 }
 
 .cartslide3{
@@ -1079,16 +1102,18 @@ background:white;
 	width:950px;
 	float:left;
 	border-left-style:solid;
-	border-width:1px;
+	border-width:0.09ex;
 	border-top-style:solid;
+	margin-top:45px;
+	border-color:#d4d4d4;
 	
 	
 }
 
 .urun{
 	
-	border-width:1px;
-	
+	border-width:0.09ex;
+	border-color:#d4d4d4;
   border-right-style:solid;
   border-bottom-style: solid;
 	float:left;
@@ -1103,7 +1128,50 @@ background:white
 .menuicon{
 	width:50px;
 	float:left;
+	
 }
+
+
+
+#buttonyukari {
+  display: inline-block;
+  background-color: #FF9800;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  border-radius: 4px;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  transition: background-color .3s, 
+    opacity .5s, visibility .5s;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 1000;
+}
+#buttonyukari::after {
+  content: "\f077";
+  font-family: FontAwesome;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 2em;
+  line-height: 50px;
+  color: #fff;
+}
+#buttonyukari:hover {
+  cursor: pointer;
+  background-color: #333;
+}
+#buttonyukari:active {
+  background-color: #555;
+}
+#buttonyukari.show {
+  opacity: 1;
+  visibility: visible;
+}
+
+
+
 
 .menuyazi{
 	float:left;
@@ -1112,6 +1180,7 @@ background:white
 	background:white;
 	padding-left:20px;
 	padding-top:5px;
+	display:block;
 
 }
 .menuitem{

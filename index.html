@@ -10,11 +10,18 @@
 	<!-- Main CSS -->
 	<link rel="stylesheet" href="style.css" />
 	
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
-<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Merriweather:400,900,900i" rel="stylesheet">
 	
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="scroll.js"></script>
 	<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
    
    
@@ -39,6 +46,8 @@
 <body>
 
 
+<a id="buttonyukari"></a>
+
 <div id="header">
 <div id="ilksira">
 <div class="logo">
@@ -62,7 +71,7 @@
 <div class="menuyani">
 <div class=robo>
 <div id="app7">
-  <button id="show-modal" class="uyelikbuton" @click="showModal = true"><img src="images/robo.png" /></button>
+  <button id="show-modal"  class="uyelikbuton" @click="showModal = true"><img width="60" height="50" src="images/robo.png" /></button>
   <!-- use the modal component, pass in the prop -->
   <modal v-if="showModal" @close="showModal = false">
     <!--
@@ -88,7 +97,8 @@
 <div class="kategoributon">
   <button onclick="tumkategoriler()" class="kategoributondrop">TÜM KATEGORİLER</button>
   <div id="kategoridrop" class="kategori-dropdown">
-    <div class=menuitem>
+    
+	<div class=menuitem>
 	<div class=menuicon>
 	<img src="images/arduino.png" width="50" height="42" alt="">
 	</div>
@@ -257,12 +267,31 @@
 <div class="uckisim">
 
 <ul>
+<div class=musteriyorum>
+   <img height="20" width="20" class="musteridialog" src="images/musteridialog.png"></img>
    <li> <a href="index-2.html">Müşteri Yorumları</span></a>
-   <li> <a href="index-2.html">Videolar</span></a>
-   <li> <a href="index-2.html">Blog</span></a>
-   <li> <a href="index-2.html">Ücretsiz Kargo</span></a>
-   <li> <a href="index-2.html">Kargo Takip</span></a>
+   <img height="20" width="60" class="musteriyildiz" src="images/musteriyildiz.png"></img>
+   </div>
+   <div class=uckisimdiger>
+      <li> <a href="index-2.html">Videolar</span></a>
+   </div>
+     <div class=uckisimdiger>
+	 <li> <a href="index-2.html">Blog</span></a>
+   </div>
+     <div class=uckisimdiger>
+	 <li> <a href="index-2.html">Ücretsiz Kargo</span></a>
+   </div>
+     <div class=uckisimdiger>
+	 <li> <a href="index-2.html">Kargo Takip</span></a>
+   </div>
+      <div class=uckisimdiger>
    <li> <a href="index-2.html">Yardım</span></a>
+   </div>
+
+   
+   
+   
+
    
 </ul>
 
@@ -483,7 +512,8 @@
 
 <div id="cartslide">
 <div class="cartaltslide">
-  <center><h3>SİZİN İÇİN SEÇTİKLERİMİZ</h3></center>
+  <p style="text-align: center;"><span style="font-size:19px;"><span style="color: rgb(102, 102, 102); font-family: &quot;Open Sans&quot;, sans-serif; font-weight: 600; text-align: center; text-transform: uppercase;">sizin i&ccedil;in se&ccedil;tiklerimiz</span></span></p>
+
 
 <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400" rel="stylesheet"/>
 <script id="cv-carousel" type="x/template">
@@ -670,7 +700,7 @@
 </div>
 </div>
 <div class="cartslide2">
-<center><h3>SON GEZDİĞİNİZ ÜRÜNLER</h3></center>
+<p style="text-align: center;"><span style="font-size:19px;"><span style="color: rgb(102, 102, 102); font-family: &quot;Open Sans&quot;, sans-serif; font-weight: 600; text-align: center; text-transform: uppercase;">son gezdiğiniz &uuml;r&uuml;nler</span></span></p>
 <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400" rel="stylesheet"/>
 <script id="cv-carousel" type="x/template">
   <div class="card-ccarousel-wrapper">
@@ -694,7 +724,8 @@
   <ccarousel></ccarousel>
 </div>
 <div class="cartslide3">
-<center><h3>ÇOK SATILAN ÜRÜNLER</h3></center>
+<p style="text-align: center;"><span style="color: rgb(102, 102, 102); font-family: &quot;Open Sans&quot;, sans-serif; font-size: 19px; font-weight: 600; text-align: center; text-transform: uppercase;">ÇOK SATILAN &Uuml;R&Uuml;NLER</span></p>
+
 <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400" rel="stylesheet"/>
 <script id="cv-carousel" type="x/template">
   <div class="card-ccarousel-wrapper">
@@ -766,7 +797,7 @@
 			</div>
 			</div>
 			<div class=satinall-satir2>
-          <a href="#" data-name="Arduino" data-price="170" class="add-to-cart btn btn-primary">Sepete Ekle</a>
+          <a href="#" data-name="Arduino-Başlangıç-Seti" data-price="170" class="add-to-cart btn btn-primary">Sepete Ekle</a>
 			</div>
 			</div>
 			</div>
@@ -1484,6 +1515,10 @@
 </div>
 
 
+
+
+
+
 <!-- template for the modal component -->
 <script type="text/x-template" id="modal-template">
   <transition name="modal">
@@ -1537,11 +1572,31 @@
       </div>
     </div>
   </transition>
+  
 </script>
+  
+  
+<script>
+
+var btn = $('#buttonyukari');
+
+$(window).scroll(function() {
+  if ($(window).scrollTop() > 300) {
+    btn.addClass('show');
+  } else {
+    btn.removeClass('show');
+  }
+});
+
+btn.on('click', function(e) {
+  $("html, body").animate({
+      scrollTop: 0
+    }, 100);
+      return false;
+});
 
 
-</div>
-
+</script>
 
 
 <script>
@@ -1801,14 +1856,15 @@ window.onclick = function(event) {
 
 
 </script>
-
+ <script src=counter.js></script>
  <script src="popup.js"></script>
  <script src="index.js"></script>
  <script src="index1.js"></script>
   <script src="index2.js"></script>
   <script src="index3.js"></script>
  <script>Vue.component(VueCarousel.name, VueCarousel);</script>
-</body>
-</html>
+
+
 	
-	
+</body> 
+ </html>
