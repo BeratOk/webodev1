@@ -78,7 +78,7 @@
       you can use custom content here to overwrite
       default content
     -->
-    <h3 slot="header">custom header</h3>
+    
   </modal>
 </div>
 </div>
@@ -252,15 +252,21 @@
 <div id="aramakutusu">
 	<form action="" method="get">
 		<input type="text" name="ara" class="aramayazi" placeholder="Aramak istediğiniz şeyi yazın .. "id= AKutu"/>
-<div class="dropdown">
-  <button onclick="myFunction()" class="dropbtn">Tüm Kategoriler</button>
-  <div id="myDropdown" class="dropdown-content">
-    
-  </div>
-</div>
-	  	<input type="submit" value="Ara" id="AButon"/>
+<div class="aramadropdown">
+  
+   <select class=kategoriselect>
+  <option value="tumkategoriler">Tüm Kategoriler</option>
+  <option value="arduino">Arduino</option>
+  <option value="rasperrypi">Raspberry Pi</option>
+  <option value="egiticiset">Eğitici Setler</option>
+  <option value="3d">3D</option>
+  <option value="gelistirmekart">Geliştirme Kartı</option>
+  
+    </select>
+
+	 
     </div>
-	
+	 	<input type="submit" value="Ara" id="AButon"/>
 	</form>
 </div> <!-- #aramakutusu -->
 
@@ -272,10 +278,12 @@
    <li> <a href="index-2.html">Müşteri Yorumları</span></a>
    <img height="20" width="60" class="musteriyildiz" src="images/musteriyildiz.png"></img>
    </div>
-   <div class=uckisimdiger>
+   <div class=menuvideo>
+   <img height="20" width="20" class="videoicon" src="images/videoicon.png"></img>
       <li> <a href="index-2.html">Videolar</span></a>
    </div>
-     <div class=uckisimdiger>
+     <div class=menublog>
+	 <img height="20" width="20" class="blogicon" src="images/blogicon.png"></img>
 	 <li> <a href="index-2.html">Blog</span></a>
    </div>
      <div class=uckisimdiger>
@@ -286,6 +294,31 @@
    </div>
       <div class=uckisimdiger>
    <li> <a href="index-2.html">Yardım</span></a>
+   </div>
+   <div class=dilsecim>
+   <img height="20" width="20" class="dilicon" src="images/tricon.png"></img>
+   <select class=dilsecimselect>
+   
+    <option value="tumkategoriler">Türkçe</option>
+    <option value="arduino">İngilizce</option>
+  
+  
+    </select>
+   
+   </div>
+   
+   <div class=parasecim>
+   
+   <img height="20" width="20" class="dilicon" src="images/paraicon.png"></img>
+   <select class=dilsecimselect>
+   
+    <option value="tumkategoriler">TL</option>
+    <option value="arduino">EURO</option>
+	 <option value="arduino">DOLAR</option>
+  
+  
+    </select>
+   
    </div>
 
    
@@ -463,10 +496,10 @@
   <a href="#" ><img src="images/solbanner1.jpg"></img></a>
   </div>
    <div class=solbanner>
-  <a href="#" ><img src="images/solbanner2.jpg"></img></a>
+  <img src="images/solbanner2.jpg"></img>
   </div>
    <div class=solbanner>
-   <a href="#" ><img src="images/solbanner3.jpg"></img></a>
+  <img src="images/solbanner3.jpg"></img>
   </div>
   </div>
 
@@ -1583,6 +1616,31 @@
     </div>
   </transition>
   
+</script>
+  
+  
+  
+  <script>
+/* When the user clicks on the button,
+toggle between hiding and showing the dropdown content */
+function dropDownFunction() {
+  document.getElementById("AramaDropDown").classList.toggle("show");
+}
+
+// Close the dropdown menu if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.aramabtn')) {
+    var dropdowns = document.getElementsByClassName("aramadown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+
 </script>
   
   

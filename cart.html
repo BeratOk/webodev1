@@ -63,7 +63,7 @@
 <div class="menuyani">
 <div class=robo>
 <div id="app7">
-  <button id="show-modal" class="uyelikbuton" @click="showModal = true"><img src="images/robo.png" /></button>
+  <button id="show-modal" class="uyelikbuton" @click="showModal = true"><img height="50" width="60" src="images/robo.png" /></button>
   <!-- use the modal component, pass in the prop -->
   <modal v-if="showModal" @close="showModal = false">
     <!--
@@ -281,7 +281,9 @@
 <div class=sepeticerik>
 <div class=sepettekiler>
 
-
+<div class=sepetust>
+<img height="70" width="1230" src="images/sepetust.png"></img>
+</div>
 
     <div class="modal-content">
       <div class="modal-header">
@@ -329,8 +331,8 @@
 	  
 	  <div class=sepetbutonlar>
 	   <a href="#" class="sepetguncelle">Sepeti Güncelle</a>
-	   <a href="#" class="sepettemizle">Sepeti Temizle</a>
-	   <a href="#" class="alisverisdevam">Alışverişe Devam</a>
+	   <button class="clear-cart btn btn-dangerr"><a href="#" class="sepettemizle">Sepeti Temizle</a></button>
+	   <a href="index.html" class="alisverisdevam">Alışverişe Devam</a>
 	   <a href="#" class="alisverislisteekle">Alışveriş Listeme Ekle</a>
 	   </div>
 	  
@@ -1024,7 +1026,30 @@
 </body>
 
 
+<!-- Kategori Secme Dropdown Kodları -->
 
+<script>
+/* When the user clicks on the button,
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown menu if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+
+</script>
 
 <script>
 // ************************************************
@@ -1194,7 +1219,7 @@ function displayCart() {
       + "<td><div class='input-group'><button class='minus-item input-group-addon btn btn-primary' data-name=" + cartArray[i].name + ">-</button>"
       + "<input type='number' class='item-count form-control' data-name='" + cartArray[i].name + "' value='" + cartArray[i].count + "'>"
       + "<button class='plus-item btn btn-primary input-group-addon' data-name=" + cartArray[i].name + ">+</button></div></td>"
-      + "<td><button class='delete-item btn btn-danger' data-name=" + cartArray[i].name + ">X</button></td>"
+      + "<td><button class='delete-item btn btn-dangerr' data-name=" + cartArray[i].name + ">X</button></td>"
       + " = " 
       + "<td>" + cartArray[i].total + "</td>" 
       +  "</tr>";

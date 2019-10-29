@@ -757,10 +757,12 @@ h1 {
 	color:#ffffff;
 	font-family:Trebuchet MS;
 	font-size:15px;
-	padding:6px 27px;
+	padding:8px 27px;
 	text-decoration:none;
 	text-shadow:0px 1px 0px #b23e35;
 	float:left;
+	margin-left:-17px;
+	margin-top:-9px;
 }
 .sepettemizle:hover {
 	background-color:#eb675e;
@@ -793,7 +795,8 @@ h1 {
 	height:50px;
 	margin-left:30px;
 	border-style:none;
-	font-size:12px;
+	font-size:12px;	
+	float:left;
 	
 }
 
@@ -1176,7 +1179,7 @@ background:white
 .menuyazi{
 	float:left;
 	width:250px;
-	height:50px;
+	height:42px;
 	background:white;
 	padding-left:20px;
 	padding-top:5px;
@@ -1185,14 +1188,18 @@ background:white
 }
 .menuitem{
 	float:left;
-	height:50px;
+	height:46px;
 	margin-top:-10px;
+	border-style:solid;
+	border-width:0.09ex;
+	border-color:#eaeaea;
 }
 
 .soldamenu{
 
 	margin-left:120px;
-	margin-top:20px;
+	margin-top:30px;
+	border-style:
 	
 	
 }
@@ -1545,4 +1552,97 @@ background:white
 	
 .uyealtyazi{
 	margin-left:300px;
+}
+
+
+/* Dropdown Button */
+.aramabtn {
+  
+  
+  border-style:solid;
+  
+  border-color:black;
+  height:25px;
+  width:150px;
+  font-size: 13px;
+  border: none;
+  float:left;
+  margin-top:15px;
+  margin-right:30px;
+}
+
+
+
+/* The container <div> - needed to position the dropdown content */
+.aramadropdown {
+ 
+
+  margin-top:20px;
+  float:left;
+  margin-right:30px;
+}
+
+.kategoriselect{
+	width:150px;
+}
+
+.btn-dangerr{
+	background:none;
+}
+.menuvideo
+{
+width:80px;	
+float:left;
+border-right:solid;
+	border-color:grey;
+	border-width:0.09ex;
+	margin-left:10px;
+
+}
+
+.menublog{
+	border-right:solid;
+	border-color:grey;
+	border-width:0.09ex;
+	float:left;
+	width:65px;
+	margin-left:10px;
+}.videoicon{
+	float:left;
+	margin-top:7px;
+	margin-right:4px;
+
+}
+
+.blogicon{
+	float:left;
+	margin-top:7px;
+	margin-right:4px;
+}
+
+.dilsecim{
+	float:left;
+		margin-top:2px;
+		border-right:solid;
+	border-color:grey;
+	border-width:0.09ex;
+}
+
+.dilicon{
+	float:left;
+	margin-left:4px;
+	margin-right:5px;
+	
+}
+
+.dilsecimselect{
+	float:left;
+	border-style:none;
+	margin-top:3px;
+}
+
+.parasecim{
+	float:left;
+	margin-left:5px;
+	margin-top:2px;
 }
